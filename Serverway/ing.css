@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+
+body{
+    /*margin: 0 auto;
+    height: auto;*/
+    position: relative;
+    text-align: center;
+    font-family: 'Nanum Gothic'
+    
+}
+#edit_div{
+    border: 1px;
+}
+
+#banner_sub{
+    margin:80px;
+    
+    text-align: center;
+}
+
+#card{
+    text-align: center;
+    
+}
+
+#table{
+    text-align: center;
+    
+}
+
+#btn input[type=button]{
+    font-size: 20pt;
+    width:250px;
+    height:85px;
+    border:0;
+    border-radius: 90px;
+    background: #46a65e;
+    color:white;
+    margin: 50px;
+}
