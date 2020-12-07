@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     font-family: 'Nanum Gothic', sans-serif;
-
 }
 
 body {
@@ -40,17 +38,26 @@ div.choice_div > div.choice_for_header > h4 {
 }
 
 /*중간*/
-div.choice_div>div.choice_for_header>table{
+div.choice_div > div.choice_for_header > table {
     width: 1000px;
 }
-div.choice_div > div.choice_for_header > table> h3 {
-    padding: 10px;
+
+div.choice_div > div.choice_for_header > table tr+label {
     float: left;
+    padding: 10px;
     font-size: 30pt;
 }
 
-div.choice_div > div.choice_for_header > table td {
-    margin: auto;
+div.choice_div > div.choice_for_header > h3 {
+    margin-top: 30px;
+    float: left;
+    padding: 10px;
+    font-size: 30pt;
+}
+
+div.choice_div > div.choice_for_header > table td {    
+    width: 500px;
     padding: 5px;
     font-size: 24pt;
+    overflow: auto;
 }
