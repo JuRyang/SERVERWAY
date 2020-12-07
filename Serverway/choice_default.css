@@ -1,51 +1,52 @@
-
-
-*{
-     margin: 0;
+* {
+    margin: 0;
     padding: 0;
-    font-family: 'Nanum Gothic', sans-serif; 
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
-body{
+body {
     background-color: #038c25;
+}
+h4{
+    color: #038c25;    
 }
 
 /*main_wrap*/
 .main_wrap {
     width: 930px;
     height: 1380px;
-    
+
     background-color: #f2f2f2;
-    
+
     margin: 30px auto;
-    
+
     border: 1px solid #ddd;
-    border-radius: 10px;
-    
-    box-shadow:  3px 3px 3px  #ddd;
-    
+    border-radius: 20px;
+
+    box-shadow: 3px 3px 5px #aaa;
+
     padding: 10px;
 }
 
 
 
 /*header*/
-header{
-    margin: 30px;
+header {
+    margin: 30px 50px;
 }
 
-header>h2{
+header > h2 {
     float: left;
     font-size: 40pt;
-    margin: 
+    margin:
 }
 
-header>input[type=checkbox]{
+header > input[type=checkbox] {
     float: right;
     padding: 5px;
 }
 
-header>h4{
+header > h4 {
     float: right;
     padding: 10px;
     font-size: 24pt;
@@ -53,106 +54,134 @@ header>h4{
 
 
 /*nav*/
-nav{
+nav {
     padding: 20x;
 }
 
 
 
 /*메뉴*/
-#choice_wrap{
-   margin: 30px;
+#choice_wrap {
+    margin: 30px;
 }
 
-#choice{
+#choice {
     width: 850px;
     padding: 5px;
 }
 
 /*breadtype*/
-#choice_wrap>#choice>#breadtype{
+#choice_wrap > #choice > #breadtype {
     overflow: hidden;
 }
 
-#choice_wrap>#choice>#breadtype>h4{
-    margin-top:  30px;
+#choice_wrap > #choice > #breadtype > h4 {
+    margin-top: 30px;
+    margin-left: 20px;
     font-size: 30pt;
 }
 
-#choice_wrap>#choice>#breadtype>ul{
-    padding-left:  10px;
-    list-style:  none;
+#choice_wrap > #choice > #breadtype > ul {
+    padding-left: 10px;
+    list-style: none;
 }
 
-#choice_wrap>#choice>#breadtype>ul>li{
+#choice_wrap > #choice > #breadtype > ul > li {
     float: left;
-    list-style:  none;
+    list-style: none;
     font-size: 24pt;
     padding: 10px;
 }
 
 /*cheesetype*/
-#choice_wrap>#choice>#cheesetype{
+#choice_wrap > #choice > #cheesetype {
     overflow: hidden;
 }
 
-#choice_wrap>#choice>#cheesetype>h4{
-    margin-top:  30px;
+#choice_wrap > #choice > #cheesetype > h4 {
+    margin-top: 30px;
+    margin-left: 20px;
     font-size: 30pt;
 }
 
-#choice_wrap>#choice>#cheesetype>ul{
-    padding-left:  10px;
-    list-style:  none;
+#choice_wrap > #choice > #cheesetype > ul {
+    padding-left: 10px;
+    list-style: none;
 }
 
-#choice_wrap>#choice>#cheesetype>ul>li{
+#choice_wrap > #choice > #cheesetype > ul > li {
     float: left;
-    list-style:  none;
+    list-style: none;
     font-size: 24pt;
     padding: 10px;
 }
 
 /*vegtype*/
-#choice_wrap>#choice>#vegtype{
+#choice_wrap > #choice > #vegtype {
     overflow: hidden;
 }
 
-#choice_wrap>#choice>#vegtype>h4{
-    margin-top:  30px;
+#choice_wrap > #choice > #vegtype > h4 {
+    margin-top: 30px;
+    margin-left: 20px;
     font-size: 30pt;
 }
 
-#choice_wrap>#choice>#vegtype>ul{
-    padding-left:  10px;
-    list-style:  none;
+#choice_wrap > #choice > #vegtype > ul {
+    padding-left: 10px;
+    list-style: none;
 }
 
-#choice_wrap>#choice>#vegtype>ul>li{
+#choice_wrap > #choice > #vegtype > ul > li {
     float: left;
-    list-style:  none;
+    list-style: none;
     font-size: 24pt;
     padding: 10px;
 }
 
 /*saucetype*/
-#choice_wrap>#choice>#saucetype{
+#choice_wrap > #choice > #saucetype {
     overflow: hidden;
 }
 
-#choice_wrap>#choice>#saucetype>h4{
-    margin-top:  30px;
+#choice_wrap > #choice > #saucetype > h4 {
+    margin-top: 30px;
+    margin-left: 20px;
     font-size: 30pt;
 }
 
-#choice_wrap>#choice>#saucetype>ul{
-    padding-left:  10px;
-    list-style:  none;
+#choice_wrap > #choice > #saucetype > ul {
+    padding-left: 10px;
+    list-style: none;
 }
 
-#choice_wrap>#choice>#saucetype>ul>li{
+#choice_wrap > #choice > #saucetype > ul > li {
     float: left;
-    list-style:  none;
+    list-style: none;
     font-size: 24pt;
     padding: 10px;
 }
+
+/*버튼*/
+.button {    
+    text-align: center;
+    
+}
+
+.button>#btn{
+    margin: 30px;
+    font-size: 20pt;
+    width: 250px;
+    height: 85px;
+    border: 0;
+    border-radius: 90px;
+    background: #46a65e;
+    color: white;
+}
+
+.button>#btn:hover{
+    cursor: pointer;
+    background-color: #ffca08;
+}
+
+
