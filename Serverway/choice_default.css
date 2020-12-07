@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+
+}
+
+body {
+    width: 930px;
+    height: 1380px;
+
+    background-color: #f2f2f2;
+
+    border-radius: 20px;
+
+}
+
+div.choice_div > div.choice_for_header {
+    margin: 30px 50px;
+}
+
+/*상단*/
+div.choice_div > div.choice_for_header > h2 {
+
+
+    font-size: 40pt;
+}
+
+div.choice_div > div.choice_for_header > input[type=checkbox] {
+    margin: 5px;
+    float: right;
+}
+
+div.choice_div > div.choice_for_header > h4 {
+    margin: 5px;
+    float: right;
+    font-size: 24pt;
+}
+
+/*중간*/
+div.choice_div>div.choice_for_header>table{
+    width: 1000px;
+}
+div.choice_div > div.choice_for_header > table> h3 {
+    padding: 10px;
+    float: left;
+    font-size: 30pt;
+}
+
+div.choice_div > div.choice_for_header > table td {
+    margin: auto;
+    padding: 5px;
+    font-size: 24pt;
+}
