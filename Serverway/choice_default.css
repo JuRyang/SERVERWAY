@@ -8,7 +8,7 @@ body {
     background-color: #038c25;
 }
 h4{
-    color: #038c25;    
+        
 }
 
 /*main_wrap*/
@@ -32,7 +32,7 @@ h4{
 
 /*header*/
 header {
-    margin: 30px 50px;
+    margin: 50px;
 }
 
 header > h2 {
@@ -76,9 +76,10 @@ nav {
 }
 
 #choice_wrap > #choice > #breadtype > h4 {
-    margin-top: 30px;
+    margin-top: 50px;
     margin-left: 20px;
     font-size: 30pt;
+    color: #038c25;
 }
 
 #choice_wrap > #choice > #breadtype > ul {
@@ -102,6 +103,7 @@ nav {
     margin-top: 30px;
     margin-left: 20px;
     font-size: 30pt;
+    color: #038c25;
 }
 
 #choice_wrap > #choice > #cheesetype > ul {
@@ -125,6 +127,7 @@ nav {
     margin-top: 30px;
     margin-left: 20px;
     font-size: 30pt;
+    color: #038c25;
 }
 
 #choice_wrap > #choice > #vegtype > ul {
@@ -148,6 +151,7 @@ nav {
     margin-top: 30px;
     margin-left: 20px;
     font-size: 30pt;
+    color: #038c25;
 }
 
 #choice_wrap > #choice > #saucetype > ul {
@@ -161,6 +165,15 @@ nav {
     font-size: 24pt;
     padding: 10px;
 }
+
+/*가격*/
+#totalprice{
+    text-align: center;
+    font-size: 30pt;
+    color: #038c25;
+    font-weight: bold;
+}
+
 
 /*버튼*/
 .button {    
