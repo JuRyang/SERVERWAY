@@ -11,150 +11,154 @@
 </head>
 
 <body>
-    <!--재료 선택 화면 시작-->
-    <div class="choice_div">
-        <div class="choice_for_header">
-            <h2>재료 선택</h2>
-            <h4>단품</h4><input type="checkbox" name="single" value="single">
-            <h4>세트 (+1,000)</h4><input type="checkbox" name="set" value="set">
-            <br>
-            <br>
+    <div class="choice">
+        <!--재료 선택 화면 시작-->
+        <div class="choice_div">
+            <div class="choice_for_header">
+                <h2>재료 선택</h2>
+                <h4>단품</h4><input type="checkbox" name="single" value="single">
+                <h4>세트 (+1,000)</h4><input type="checkbox" name="set" value="set">
+                <br>
+                <br>
 
 
-            <!--빵 선택-->
-            <h3>빵</h3>
-            <table>                
-                <tr>
-                    <td>
-                        <input type="radio" name="bread" value="bread"> 위트
-                    </td>
-                    <td>
-                        <input type="radio" name="bread" value="bread"> 허니 오트
-                    </td>
-                    <td>
-                        <input type="radio" name="bread" value="bread"> 하트
-                    </td>
-                    <td>
-                        <input type="radio" name="bread" value="bread"> 플랫
-                    </td>
-                </tr>
-               
+                <!--빵 선택-->
+                <h3>빵</h3>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="radio" name="bread" value="bread"> 위트
+                        </td>
+                        <td>
+                            <input type="radio" name="bread" value="bread"> 허니 오트
+                        </td>
+                        <td>
+                            <input type="radio" name="bread" value="bread"> 하트
+                        </td>
+                        <td>
+                            <input type="radio" name="bread" value="bread"> 플랫
+                        </td>
+                    </tr>
 
-            </table>
-            <!--치즈 선택-->
-            <h3>치즈</h3>
-            <table>
 
-                <tr>
-                    <td>
-                        <input type="radio" name="cheese" value="american"> 아메리칸 치즈
-                    </td>
-                    <td>
-                        <input type="radio" name="cheese" value="shredded"> 슈레드
-                    </td>
-                    <td>
-                        <input type="radio" name="cheese" value="mozzarella"> 모차렐라
-                    </td>
-                    <td>
-                        <input type="radio" name="cheese" value="cheesenone"> 치즈 제외
-                    </td>
-                </tr>
-                
+                </table>
+                <!--치즈 선택-->
+                <h3>치즈</h3>
+                <table>
 
-            </table>
-            <!--야채 선택-->
-            <h3>야채(제외할 야채 선택)</h3>
-            <table>
+                    <tr>
+                        <td>
+                            <input type="radio" name="cheese" value="american"> 아메리칸 치즈
+                        </td>
+                        <td>
+                            <input type="radio" name="cheese" value="shredded"> 슈레드
+                        </td>
+                        <td>
+                            <input type="radio" name="cheese" value="mozzarella"> 모차렐라
+                        </td>
+                        <td>
+                            <input type="radio" name="cheese" value="cheesenone"> 치즈 제외
+                        </td>
+                    </tr>
 
-                <tr>
-                    <td>
-                        <input type="radio" name="vegetable" value="vgnone"> 모든 야채 빼기
-                    </td>
-                    <td>
-                        <input type="radio" name="vegetable" value="lettuce"> 양상추
-                    </td>
-                    <td>
-                        <input type="radio" name="vegetable" value="tomato"> 토마토
-                    </td>
-                    <td>
-                        <input type="radio" name="vegetable" value="cucumber"> 오이
-                    </td>
-                    <td>
-                        <input type="radio" name="vegetable" value="vgnone"> 피망
-                    </td>
-                    <td>
-                        <input type="radio" name="vegetable" value="lettuce"> 양파
-                    </td>
-                    <td>
-                        <input type="radio" name="vegetable" value="tomato"> 피클
-                    </td>
-                    <td>
-                        <input type="radio" name="vegetable" value="cucumber"> 올리브
-                    </td>
-                    <td>
-                        <input type="radio" name="vegetable" value="cucumber"> 할라피뇨
-                    </td>
-                </tr>
-            </table>
-            <!--소스 선택-->
-            <h3>소스</h3>
-            <table>
 
-                <tr>
-                    <td>
-                        <input type="radio" name="sauce" value="sweetonion"> 스윗어니언
-                    </td>
-                    <td>
-                        <input type="radio" name="sauce" value="ranch"> 랜치드레싱
-                    </td>
-                    <td>
-                        <input type="radio" name="sauce" value="sweetchilli"> 스윗 칠리
-                    </td>
-                    <td>
-                        <input type="radio" name="sauce" value="hneymus"> 허니 머스타드
-                    </td>
-                    <td>
-                        <input type="radio" name="sauce" value="mayonnaise"> 마요네즈
-                    </td>
-                    <td>
-                        <input type="radio" name="sauce" value="smokebbq"> 스모크바베큐
-                    </td>
-                    <td>
-                        <input type="radio" name="sauce" value="southwest"> 사우스웨스트
-                    </td>
-                    <td>
-                        <input type="radio" name="sauce" value="salt"> 소금
-                    </td>
-                    <td>
-                        <input type="radio" name="sauce" value="blackpepper"> 후추
-                    </td>
-                </tr>
-            </table>
-            <!--추가 토핑 메뉴 선택-->
-            <h3>토핑</h3>
-            <table>
+                </table>
+                <!--야채 선택-->
+                <h3>야채(제외할 야채 선택)</h3>
+                <table>
 
-                <tr>
-                    <td>
-                        <input type="radio" name="topping" value="eggmayo"> 에그마요
-                    </td>
-                    <td>
-                        <input type="radio" name="topping" value="pepperoni"> 페페로니
-                    </td>
-                    <td>
-                        <input type="radio" name="topping" value="bacon"> 베이컨
-                    </td>
-                    <td>
-                        <input type="radio" name="topping" value="avocado"> 아보카도
-                    </td>
-                    <td>
-                        <input type="radio" name="topping" value="omelet"> 오믈렛
-                    </td>                    
-                </tr>
-            </table>
-        </div>
-        <div>
-            <input type=""
+                    <tr>
+                        <td>
+                            <input type="radio" name="vegetable" value="vgnone"> 모든 야채 빼기
+                        </td>
+                        <td>
+                            <input type="radio" name="vegetable" value="lettuce"> 양상추
+                        </td>
+                        <td>
+                            <input type="radio" name="vegetable" value="tomato"> 토마토
+                        </td>
+                        <td>
+                            <input type="radio" name="vegetable" value="cucumber"> 오이
+                        </td>
+                        <td>
+                            <input type="radio" name="vegetable" value="vgnone"> 피망
+                        </td>
+                        <td>
+                            <input type="radio" name="vegetable" value="lettuce"> 양파
+                        </td>
+                        <td>
+                            <input type="radio" name="vegetable" value="tomato"> 피클
+                        </td>
+                        <td>
+                            <input type="radio" name="vegetable" value="cucumber"> 올리브
+                        </td>
+                        <td>
+                            <input type="radio" name="vegetable" value="cucumber"> 할라피뇨
+                        </td>
+                    </tr>
+                </table>
+                <!--소스 선택-->
+                <h3>소스</h3>
+                <table>
+
+                    <tr>
+                        <td>
+                            <input type="radio" name="sauce" value="sweetonion"> 스윗어니언
+                        </td>
+                        <td>
+                            <input type="radio" name="sauce" value="ranch"> 랜치드레싱
+                        </td>
+                        <td>
+                            <input type="radio" name="sauce" value="sweetchilli"> 스윗 칠리
+                        </td>
+                        <td>
+                            <input type="radio" name="sauce" value="hneymus"> 허니 머스타드
+                        </td>
+                        <td>
+                            <input type="radio" name="sauce" value="mayonnaise"> 마요네즈
+                        </td>
+                        <td>
+                            <input type="radio" name="sauce" value="smokebbq"> 스모크바베큐
+                        </td>
+                        <td>
+                            <input type="radio" name="sauce" value="southwest"> 사우스웨스트
+                        </td>
+                        <td>
+                            <input type="radio" name="sauce" value="salt"> 소금
+                        </td>
+                        <td>
+                            <input type="radio" name="sauce" value="blackpepper"> 후추
+                        </td>
+                    </tr>
+                </table>
+                <!--추가 토핑 메뉴 선택-->
+                <h3>토핑</h3>
+                <table>
+
+                    <tr>
+                        <td>
+                            <input type="radio" name="topping" value="eggmayo"> 에그마요
+                        </td>
+                        <td>
+                            <input type="radio" name="topping" value="pepperoni"> 페페로니
+                        </td>
+                        <td>
+                            <input type="radio" name="topping" value="bacon"> 베이컨
+                        </td>
+                        <td>
+                            <input type="radio" name="topping" value="avocado"> 아보카도
+                        </td>
+                        <td>
+                            <input type="radio" name="topping" value="omelet"> 오믈렛
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="button">
+                <input type="button" value="취소" id="btn">
+                <input type="button" value="담기" id="btn">
+
+            </div>
         </div>
     </div>
 

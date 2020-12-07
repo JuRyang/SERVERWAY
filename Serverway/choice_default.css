@@ -6,58 +6,78 @@
 }
 
 body {
-    width: 930px;
+    background-color: #46a65e;
+    
+
+}
+
+div.choice{
+  width: 930px;
     height: 1380px;
 
     background-color: #f2f2f2;
 
-    border-radius: 20px;
-
+    border-radius: 20px;  
 }
 
-div.choice_div > div.choice_for_header {
+div.choice>div.choice_div > div.choice_for_header {
     margin: 30px 50px;
 }
 
 /*상단*/
-div.choice_div > div.choice_for_header > h2 {
+div.choice>div.choice_div > div.choice_for_header > h2 {
 
 
     font-size: 40pt;
 }
 
-div.choice_div > div.choice_for_header > input[type=checkbox] {
+div.choice>div.choice_div > div.choice_for_header > input[type=checkbox] {
     margin: 5px;
     float: right;
 }
 
-div.choice_div > div.choice_for_header > h4 {
+div.choice>div.choice_div > div.choice_for_header > h4 {
     margin: 5px;
     float: right;
     font-size: 24pt;
 }
 
 /*중간*/
-div.choice_div > div.choice_for_header > table {
-    width: 1000px;
+div.choice>div.choice_div > div.choice_for_header > table {
+    width: auto;
 }
 
-div.choice_div > div.choice_for_header > table tr+label {
+div.choice>div.choice_div > div.choice_for_header > table tr+label {
     float: left;
     padding: 10px;
     font-size: 30pt;
 }
 
-div.choice_div > div.choice_for_header > h3 {
+div.choice>div.choice_div > div.choice_for_header > h3 {
     margin-top: 30px;
-    float: left;
+    
     padding: 10px;
     font-size: 30pt;
 }
 
-div.choice_div > div.choice_for_header > table td {    
-    width: 500px;
-    padding: 5px;
+div.choice>div.choice_div > div.choice_for_header > table td {    
+    width: auto;
+    padding: 20px;
     font-size: 24pt;
-    overflow: auto;
+    
+}
+
+/*버튼*/
+div.button{
+    
+}
+
+#btn {
+    font-size: 20pt;
+    width:250px;
+    height:85px;
+    border:0;
+    border-radius: 90px;
+    background: #46a65e;
+    color:white;
 }
