@@ -8,7 +8,10 @@ body {
     background-color: #038c25;
 }
 h4{
-        
+    margin: 30px 15px;
+    font-size: 30px;
+    color:#46a65e;
+    font-weight: bold;     
 }
 
 /*main_wrap*/
@@ -21,11 +24,11 @@ h4{
     margin: 30px auto;
 
     border: 1px solid #ddd;
-    border-radius: 20px;
+    border-radius: 80px;
 
-    box-shadow: 3px 3px 5px #aaa;
+    box-shadow: 0px 0px 10px #aaa;
 
-    padding: 10px;
+    padding: 50px;
 }
 
 
@@ -41,15 +44,18 @@ header > h2 {
     margin:
 }
 
-header > input[type=checkbox] {
-    float: right;
-    padding: 5px;
+label > input[type=checkbox] {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px;
 }
 
-header > h4 {
+label {
     float: right;
-    padding: 10px;
     font-size: 24px;
+    font-weight: bold;
+    margin: 0px 20px;
 }
 
 
@@ -57,7 +63,6 @@ header > h4 {
 nav {
     padding: 20x;
 }
-
 
 
 /*메뉴*/
@@ -75,12 +80,7 @@ nav {
     overflow: hidden;
 }
 
-#choice_wrap > #choice > #breadtype > h4 {
-    margin-top: 50px;
-    margin-left: 20px;
-    font-size: 30px;
-    color: #038c25;
-}
+
 
 #choice_wrap > #choice > #breadtype > ul {
     padding-left: 10px;
@@ -100,12 +100,7 @@ nav {
     overflow: hidden;
 }
 
-#choice_wrap > #choice > #cheesetype > h4 {
-    margin-top: 30px;
-    margin-left: 20px;
-    font-size: 30px;
-    color: #038c25;
-}
+
 
 #choice_wrap > #choice > #cheesetype > ul {
     padding-left: 10px;
@@ -125,12 +120,7 @@ nav {
     overflow: hidden;
 }
 
-#choice_wrap > #choice > #vegtype > h4 {
-    margin-top: 30px;
-    margin-left: 20px;
-    font-size: 30px;
-    color: #038c25;
-}
+
 
 #choice_wrap > #choice > #vegtype > ul {
     padding-left: 10px;
@@ -150,12 +140,7 @@ nav {
     overflow: hidden;
 }
 
-#choice_wrap > #choice > #saucetype > h4 {
-    margin-top: 30px;
-    margin-left: 20px;
-    font-size: 30px;
-    color: #038c25;
-}
+
 
 #choice_wrap > #choice > #saucetype > ul {
     padding-left: 10px;
@@ -175,12 +160,7 @@ nav {
     overflow: hidden;
 }
 
-#choice_wrap > #choice > #addtype > h4 {
-    margin-top: 30px;
-    margin-left: 20px;
-    font-size: 30px;
-    color: #038c25;
-}
+
 
 #choice_wrap > #choice > #addtype > ul {
     padding-left: 10px;
@@ -209,9 +189,7 @@ footer{
 /*가격*/
 #totalprice{
     text-align: center;
-    font-size: 30px;
-    color: #038c25;
-    font-weight: bold;
+    margin: 40px; 
 }
 
 
@@ -237,6 +215,14 @@ footer{
     background-color: #ffca08;
 }
 
+input[type=radio]{
+    margin-right:2px;
+    width:24px;
+    height: 24px;
+    border: 3px solid #eee;
+    background-color: #46a65e;
+    
+}
 
 
 

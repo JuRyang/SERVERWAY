@@ -17,8 +17,10 @@
     <div class="main_wrap">
         <header>
             <h2>재료 선택</h2>
-            <h4> 단품 </h4><input type="checkbox" name="single" value="single">
-            <h4> 세트 (+1,000) </h4><input type="checkbox" name="set" value="set">
+            <div id="choice0">
+            <label for="single"><input type="checkbox" name="single" value="single">단품</label>
+            <label for="set"><input type="checkbox" name="set" value="set">세트 (+1,000)</label>
+            </div>
         </header>
         <br><br><br>
         <!--재료 선택 화면 시작-->
@@ -85,23 +87,23 @@
 
                     </ul>
                 </div>
-
-            </div>
-
-        </div>
-
-        <div id="foot">
-            <footer>
+                
                 <!--가격-->
                 <div id="totalprice">
-                    가격
+                    <h4>가격:7,800원</h4>
                 </div>
 
                 <!--버튼-->
                 <div class="button">
                     <input type="button" value="취소" id="btn">
                     <input type="button" value="담기" id="btn">
-                </div>
+            </div>
+
+        </div>
+
+        <div id="foot">
+            <footer>
+                
             </footer>
         </div>
 
