@@ -1,0 +1,110 @@
+url(<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">);
+
+*{
+    padding: 0;
+    margin:0;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+body{
+    background: gray;
+}
+
+#main_wrap {
+    position:relative;
+    background-color: #fff;
+    width: 1080px;
+    height: 1980px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h4 {
+    margin: 50px 15px;
+    font-size: 30px;
+    color:#46a65e;
+    font-weight: bold;
+}
+
+#totalprice{
+    text-align: center;
+    margin: 90px; 
+}
+
+
+#logo {
+    margin: 120px;
+    text-align: center;
+    background-color: white;
+}
+
+
+#btn_wrap{
+    text-align: center;
+}
+
+button.btn {
+    font-size: 30px;
+    width:250px;
+    height:85px;
+    border:0;
+    border-radius: 90px;
+    background: #46a65e;
+    color:white;
+    margin: 0px 70px;
+}
+
+div.add_menu_header{
+    margin: 50px 0px;
+    
+}
+
+input[type=checkbox]{
+    width: 30px;
+    height: 30px;
+    border: 0;
+}
+
+
+
+div.add_menu{   
+    padding: 50px;
+    width:900px;
+    height:1380px;
+    background-color: #eee;
+    border-radius: 80px;
+    
+    box-shadow: 0px 0px 10px #aaa;
+    position: absolute;
+    
+    top:280px;
+    left:35px;
+    
+    /*display:none;*/
+}
+
+
+
+
+div.add_menu.add_menu_header>input[type=checkbox] {
+    font-size: 24pt;
+}
+
+label{
+    font-size: 24px;   
+    margin: 0px 80px 0px 10px;
+}
+
+input[type=radio]{
+    margin-right:2px;
+    width:24px;
+    height: 24px;
+    border: 3px solid #eee;
+    background-color: #46a65e;
+    
+}
+
+
