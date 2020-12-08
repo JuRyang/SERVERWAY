@@ -4,37 +4,73 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="default.css">
-    <script src="number.js"></script>
-    
     <title></title>
-</head>
-<body>
-    <div id= "content">
-        
-  <!--  <div id="banner_sub">
-        <img src="banner.png" width="600px" height="95px">
-    </div>-->
-        
-        <div id="num_header">
-            <h1 id="wait"> 대기번호 </h1>
-            <table>
-                <tr id="num">01</tr><br>
-                <tr><label>대기인수:</label>
-                    
-                    
-                </tr>
-            </table>
-        </div>
+    
+    
+   <script>
+       //3초 후 홈화면으로 돌아가기 
+      function nextWin(){
+         location="http://www.naver.com"
+      }
+        </script>
         
         
-            
         
-        </div>
-        
+        <SCRIPT>
+            //대기번호 
+        expireDate = new Date
+        expireDate.setMonth(expireDate.getMonth() + 6)
+        hitCt = eval(cookieVal("pageHit"))
+        hitCt++
+        document.cookie = "pageHit=" + hitCt + ";expires=" + expireDate.toGMTString()
 
-        </div>
+        function cookieVal(cookieName) {
+            thisCookie = document.cookie.split("; ")
+            for (i = 0; i < thisCookie.length; i++) {
+                if (cookieName == thisCookie[i].split("=")[0]) {
+                    return thisCookie[i].split("=")[1]
+                }
+            }
+            return 0
+        }
+        
+    </SCRIPT>
+
+
+</head>
+
+<body onload="setTimeout('nextWin()',1000*3)">
+    <div id="wait">
+        <form >
+    <h1>대기번호</h1>
     
     
+    <!--대기번호 숫자-->
+    <div id="count">
+        <SCRIPT>
+            document.write("<font>" + hitCt + "</font>")
+        </SCRIPT>
+        
+    </div>
     
+    <div id="date">
+        
+    <script type="text/javascript">
+         var now = new Date();
+         var nowYear = now.getFullYear();
+         // getMonth 는 0 부터 인덱스가 시작하기 때문에 + 1 
+         var nowMonth = now.getMonth() + 1; 
+         var nowDate = now.getDate();
+         var nowHour = now.getHours();
+         var nowMt = now.getMinutes();                 
+         document.write( + nowYear + '년 ' + nowMonth + '월 ' + nowDate + '일 ' );
+
+         document.write( nowHour + '시 ' + nowMt + '분 ');
+        
+     </script>
+        <h3> 결제가 완료되었습니다.</h3>
+    </div>
+            </form>
+    </div>
 </body>
 </html>

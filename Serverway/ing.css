@@ -1,21 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
 
-
 body{
     /*margin: 0 auto;
     height: auto;*/
     position: relative;
     text-align: center;
     font-family: 'Nanum Gothic'
+   
     
 }
 #edit_div{
+    margin: auto;
     border: 1px;
+    solid #aaa;
+    border-radius:20px;
+    box-shadow: 0px 0px 5px #aaa;
+    width: 930px;
+    height: 1380px;
+    
 }
 
-#banner_sub{
-    margin:80px;
-    
+#banner_header{
+    margin:280px 120px 300px;
+    clear: left;
+    float: left;
     text-align: center;
 }
 
@@ -37,5 +45,5 @@ body{
     border-radius: 90px;
     background: #46a65e;
     color:white;
-    margin: 50px;
+    margin: 300px 30px 20px;
 }
