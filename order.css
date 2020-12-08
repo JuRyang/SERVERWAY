@@ -9,7 +9,7 @@ body {
     text-align: center;
     font-family: 'Nanum Gothic', sans-serif;
 
-    box-shadow: 0px 0px 5px #aaa;
+    box-shadow: 0px 0px 10px #aaa;
 }
 
 h1{
@@ -31,7 +31,10 @@ h1{
 }
 
 hr{
-    border-top: 1px solid #ccc;
+    border: 0;
+    width: 80%;
+    height: 3px;
+    background: #ccc;
 }
 
 #cost{
@@ -44,8 +47,8 @@ hr{
 }
 
 #btn {
-    font-size: 20px;
-    
+    font-size: 25px;
+    font-family: 'Nanum Gothic', sans-serif;
     margin: 20px 70px auto;
     width: 250px;
     height: 85px;
@@ -63,7 +66,8 @@ hr{
 
 
 #btn_order {
-    font-size: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 25px;
     width: 250px;
     height: 85px;
     border: 0;
