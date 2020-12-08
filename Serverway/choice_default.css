@@ -238,5 +238,29 @@ footer{
 }
 
 
+/*테스트*/
+
+.visual{
+    position: relative;
+}
+.visual button {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%); 
+    width: 71px;
+    height: 71px;
+    border-radius: 100%;
+    background-color: #ffca08;
+}
+.visual button.slick-prev {
+    left: 0;
+}
+
+.visual button.slick-next {
+    right: 0;
+}
+
+
 
 
