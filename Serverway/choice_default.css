@@ -54,7 +54,7 @@ label > input[type=radio] {
    
 }
 
-label {
+#choice0 > label {
     float: right;
     font-size: 24px;
     font-weight: bold;
@@ -175,15 +175,16 @@ footer{
 */
 
 /*ul>li 속성*/
-.breadtype ul>li{
+#choice ul li{
     width: 200px;
     float: left;
     list-style: none;
     font-size: 24px;
     padding: 10px;
+    font-weight: bold;
 }
 
-.cheesetype ul>li{
+/*.cheesetype ul>li{
     width: 200px;
     float: left;
     list-style: none;
@@ -213,7 +214,7 @@ footer{
     list-style: none;
     font-size: 24px;
     padding: 10px;
-}
+}*/
 
 
 /*가격*/
@@ -507,6 +508,11 @@ input[type=radio]{
     
 }
 
-
+#totalprice{
+   margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    
+}
 
 
