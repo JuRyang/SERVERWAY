@@ -70,6 +70,8 @@ var beforeChecked = -1;
          if(beforeChecked == index) {
          beforeChecked = -1;
          $(this).prop("checked", false);
+             totalprice();
+             getListValue();
          }else{
          beforeChecked = index;
          }
