@@ -17,18 +17,20 @@
     <link rel="stylesheet" href="choice_default.css">
     <!--폰트-->
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <!--js-->
+    <script src="chocie_manager.js"></script>
 
 
 </head>
 
 <body>
     <!--12/08 수인 class -> id로 수정-->
-    <div class="main_wrap">
+    <div class="choice_main_wrap">
         <header>
             <h2>재료 선택</h2>
             <div id="choice0">
-                <label for="single"><input type="radio" name="set" value="single">단품</label>
-                <label for="set"><input type="radio" name="set" value="setset">세트 (+1,000)</label>
+                <label for="single"><input type="radio" class="radio5" name="set" value="single" onclick='getListValue()'>단품</label>
+                <label for="set"><input type="radio" class="radio5" name="set" value="setset" data-price="1000" onclick='getListValue()'>세트 (+1,000)</label>
             </div>
         </header>
         <br><br><br>
@@ -39,12 +41,12 @@
                 <h4>빵</h4>
                 <section class="breadtype">
                     <ul>
-                        <li><input type="radio" name="bread" value="wheat"> 위트</li>
-                        <li><input type="radio" name="bread" value="honeyoat"> 허니 오트</li>
-                        <li><input type="radio" name="bread" value="hearty"> 하티</li>
+                        <li><input type="radio" name="bread" value="wheat" onclick='getListValue()' > 위트</li>
+                        <li><input type="radio" name="bread" value="honeyoat" onclick='getListValue()' > 허니 오트</li>
+                        <li><input type="radio" name="bread" value="hearty" onclick='getListValue()' > 하티</li>
                     </ul>
                     <ul>
-                        <li><input type="radio" name="bread" value="flat"> 플랫</li>
+                        <li><input type="radio" name="bread" value="flat" > 플랫</li>
                     </ul>
                 </section>
 
@@ -52,12 +54,12 @@
                 <h4>치즈</h4>
                 <section class="cheesetype">
                     <ul>
-                        <li><input type="radio" name="cheese" value="american"> 아메리칸 치즈</li>
-                        <li><input type="radio" name="cheese" value="shredded"> 슈레드</li>
-                        <li><input type="radio" name="cheese" value="mozzarella"> 모차렐라</li>
+                        <li><input type="radio" name="cheese" value="american" onclick='getListValue()'> 아메리칸 치즈</li>
+                        <li><input type="radio" name="cheese" value="shredded" onclick='getListValue()'> 슈레드</li>
+                        <li><input type="radio" name="cheese" value="mozzarella" onclick='getListValue()'> 모차렐라</li>
                     </ul>
                     <ul>
-                        <li><input type="radio" name="cheese" value="cheesenone"> 치즈 제외</li>
+                        <li><input type="radio" name="cheese" value="cheesenone" onclick='getListValue()'> 치즈 제외</li>
                     </ul>
                 </section>
 
@@ -65,19 +67,19 @@
                 <h4>야채</h4>
                 <section class="vegtype">
                     <ul>
-                        <li><input type="radio" name="vegetable" value="vgnone"> 모든 야채 빼기</li>
-                        <li><input type="radio" name="vegetable" value="lettuce"> 양상추</li>
-                        <li><input type="radio" name="vegetable" value="tomato"> 토마토</li>
+                        <li><input type="radio" name="nonevege" value="vgnone" onclick='getListValue()'> 모든 야채 빼기</li>
+                        <li><input type="radio" name="vegetable1" value="lettuce" onclick='getListValue()'> 양상추</li>
+                        <li><input type="radio" name="vegetable2" value="tomato" onclick='getListValue()'> 토마토</li>
                     </ul>
                     <ul>
-                        <li><input type="radio" name="vegetable" value="cucumber"> 오이</li>
-                        <li><input type="radio" name="vegetable" value="vgnone"> 피망</li>
-                        <li><input type="radio" name="vegetable" value="lettuce"> 양파</li>
+                        <li><input type="radio" name="vegetable3" value="cucumber" onclick='getListValue()'> 오이</li>
+                        <li><input type="radio" name="vegetable4" value="vgnone" onclick='getListValue()'> 피망</li>
+                        <li><input type="radio" name="vegetable5" value="lettuce" onclick='getListValue()'> 양파</li>
                     </ul>
                     <ul>
-                        <li><input type="radio" name="vegetable" value="tomato"> 피클</li>
-                        <li><input type="radio" name="vegetable" value="cucumber"> 올리브</li>
-                        <li><input type="radio" name="vegetable" value="cucumber"> 할라피뇨</li>
+                        <li><input type="radio" name="vegetable6" value="tomato" onclick='getListValue()'> 피클</li>
+                        <li><input type="radio" name="vegetable7" value="cucumber" onclick='getListValue()'> 올리브</li>
+                        <li><input type="radio" name="vegetable8" value="cucumber" onclick='getListValue()'> 할라피뇨</li>
                     </ul>
                 </section>
 
@@ -85,19 +87,19 @@
                 <h4>소스</h4>
                 <section class="saucetype">
                     <ul>
-                        <li><input type="radio" name="sauce" value="sweetonion"> 스윗어니언</li>
-                        <li><input type="radio" name="sauce" value="ranch"> 랜치드레싱</li>
-                        <li><input type="radio" name="sauce" value="sweetchilli"> 스윗 칠리</li>
+                        <li><input type="radio" name="sauce1" value="sweetonion" onclick='getListValue()'> 스윗어니언</li>
+                        <li><input type="radio" name="sauce2" value="ranch" > 랜치드레싱</li>
+                        <li><input type="radio" name="sauce3" value="sweetchilli" onclick='getListValue()'> 스윗 칠리</li>
                     </ul>
                     <ul>
-                        <li><input type="radio" name="sauce" value="hneymus"> 허니 머스타드</li>
-                        <li><input type="radio" name="sauce" value="mayonnaise"> 마요네즈</li>
-                        <li><input type="radio" name="sauce" value="smokebbq"> 스모크바베큐</li>
+                        <li><input type="radio" name="sauce4" value="hneymus" > 허니 머스타드</li>
+                        <li><input type="radio" name="sauce5" value="mayonnaise" onclick='getListValue()'> 마요네즈</li>
+                        <li><input type="radio" name="sauce6" value="smokebbq" onclick='getListValue()'> 스모크바베큐</li>
                     </ul>
                     <ul>
-                        <li><input type="radio" name="sauce" value="southwest"> 사우스웨스트</li>
-                        <li><input type="radio" name="sauce" value="salt"> 소금</li>
-                        <li><input type="radio" name="sauce" value="blackpepper"> 후추</li>
+                        <li><input type="radio" name="sauce7" value="southwest" onclick='getListValue()'> 사우스웨스트</li>
+                        <li><input type="radio" name="sauce8" value="salt" onclick='getListValue()'> 소금</li>
+                        <li><input type="radio" name="sauce9" value="blackpepper" onclick='getListValue()'> 후추</li>
                     </ul>
                 </section>
 
@@ -105,32 +107,52 @@
                 <h4>추가</h4>
                 <section class="addtype">
                     <ul>
-                        <li><input type="radio" name="add" value="eggmayo"> 에그마요</li>
-                        <li><input type="radio" name="add" value="pepperoni"> 페페로니</li>
-                        <li><input type="radio" name="add" value="bacon"> 베이컨</li>
+                        <li><input type="radio" class="radio5" name="add1" value="에그마요" data-price="2000" onclick='getListValue()'> 에그마요</li>
+                        <li><input type="radio" class="radio5" name="add2" value="페페로니" data-price="2000"  onclick='getListValue()'> 페페로니</li>
+                        <li><input type="radio" class="radio5" name="add3" value="베이컨" data-price="3000" onclick='getListValue()'> 베이컨</li>
                     </ul>
                     <ul>
-                        <li><input type="radio" name="add" value="avocado"> 아보카도</li>
-                        <li><input type="radio" name="add" value="omelet"> 오믈렛</li>
+                        <li><input type="radio" class="radio5" name="add4" value="아보카도" data-price="1000" onclick='getListValue()'> 아보카도</li>
+                        <li><input type="radio" class="radio5" name="add5" value="오믈렛" data-price="2500" onclick='getListValue()'> 오믈렛</li>
                     </ul>
                 </section>
-                
+
                 <!--12/08 수인 slick 기능 추가-->
-                <script type="text/javascript">$('.breadtype').slick();</script>
-                <script type="text/javascript">$('.cheesetype').slick();</script>
-                <script type="text/javascript">$('.vegtype').slick();</script>
-                <script type="text/javascript">$('.saucetype').slick();</script>
-                <script type="text/javascript">$('.addtype').slick();</script>
-                                
+                <script type="text/javascript">
+                    $('.breadtype').slick();
+
+                </script>
+                <script type="text/javascript">
+                    $('.cheesetype').slick();
+
+                </script>
+                <script type="text/javascript">
+                    $('.vegtype').slick();
+
+                </script>
+                <script type="text/javascript">
+                    $('.saucetype').slick();
+
+                </script>
+                <script type="text/javascript">
+                    $('.addtype').slick();
+
+                </script>
+
                 <!--가격-->
-                <div id="totalprice">
-                    <h4>가격:7,800원</h4>
+                <!--선택한 샌드위치 이름 들어갈 곳-->
+                <h4>선택한 샌드위치 : 치킨데리야끼</h4> 
+                <div id="listresult"> </div>
+                    <div id="totalprice">
+                    <h4 id="sumprice">0</h4>
+                    <div id="sandwitchPrice"></div>
+               
                 </div>
 
                 <!--버튼-->
                 <div class="button">
-                    <input type="button" value="취소" id="btn">
-                    <input type="button" value="담기" id="btn">
+                    <input onclick="choiceWinClose()" type="button" value="취소" id="btn">
+                    <input onclick="value_check()" type="button" value="담기" id="btn">
                 </div>
 
             </div>
@@ -146,5 +168,6 @@
 
     <!--재료 선택 화면 끝-->
 
-</body></html>
+</body>
 
+</html>
