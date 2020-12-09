@@ -3,7 +3,7 @@ body {
     padding: 20px;
     margin: 20px auto;
     width: 930px;
-    height: 1380px;
+    /*height: 1380px;*/
     border-radius: 50px;
 
     text-align: center;
@@ -16,7 +16,14 @@ h1{
     font-size: 35pt;
 }
 
-#sandwich{
+table{
+    font-family: 'Nanum Gothic' , sans-serif;
+    width: 750px;
+    height: 400px;
+}
+
+#sandwich{  
+    font-family: 'Nanum Gothic' , sans-serif;
     text-align : left;
     text-indent: 4em;   
     color: #46a65e;
@@ -24,10 +31,18 @@ h1{
 }
 
 #option{ 
+    font-family: 'Nanum Gothic' , sans-serif;
     line-height: 0;
     text-align : left;
     text-indent: 8em;
     font-size: 24pt;
+}
+
+#price{
+    font-family: 'Nanum Gothic' , sans-serif;
+    font-size: 30pt;
+    text-align: center;
+    
 }
 
 hr{
