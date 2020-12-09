@@ -63,7 +63,7 @@ function getList(event) {
     
 }
 
-// Radio checked 선택해제가능하게 만들기
+// Radio checked 선택해제 가능하게 만들기
 var beforeChecked = -1;
 
    $(function(){
@@ -103,7 +103,12 @@ function addComma(num) {
   return num.toString().replace(regexp, ',');
 }
 
-
+// 메뉴선택창 닫기
+function choiceWinClose()
+{
+    var choiceDiv = document.querySelector('div.choice_main_wrap');
+    choiceDiv.style.display ='none';
+}
 
 
 

@@ -15,7 +15,7 @@ h4{
 }
 
 /*main_wrap*/
-.main_wrap {
+div.choice_main_wrap {
     width: 930px;
     height: 1380px;
 
@@ -29,6 +29,7 @@ h4{
     box-shadow: 0px 0px 10px #aaa;
 
     padding: 50px;
+   /* display: none;*/
 }
 
 

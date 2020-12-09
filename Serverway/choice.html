@@ -25,7 +25,7 @@
 
 <body>
     <!--12/08 수인 class -> id로 수정-->
-    <div class="main_wrap">
+    <div class="choice_main_wrap">
         <header>
             <h2>재료 선택</h2>
             <div id="choice0">
@@ -140,7 +140,8 @@
                 </script>
 
                 <!--가격-->
-                <h4>선택된 옵션 : 치킨데리야끼</h4>
+                <!--선택한 샌드위치 이름 들어갈 곳-->
+                <h4>선택한 샌드위치 : 치킨데리야끼</h4> 
                 <div id="listresult"> </div>
                     <div id="totalprice">
                     <h4 id="sumprice">0</h4>
@@ -150,7 +151,7 @@
 
                 <!--버튼-->
                 <div class="button">
-                    <input type="button" value="취소" id="btn">
+                    <input onclick="choiceWinClose()" type="button" value="취소" id="btn">
                     <input onclick="value_check()" type="button" value="담기" id="btn">
                 </div>
 
