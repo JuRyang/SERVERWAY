@@ -1,0 +1,528 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+body {
+    background-color: #038c25;
+}
+h4{
+    margin: 30px 15px;
+    font-size: 30px;
+    color:#46a65e;
+    font-weight: bold;     
+}
+
+/*main_wrap*/
+div.choice_main_wrap {
+    width: 930px;
+    height: 1380px;
+
+    background-color: #f2f2f2;
+
+    margin: 30px auto;
+
+    border: 1px solid #ddd;
+    border-radius: 80px;
+
+    box-shadow: 0px 0px 10px #aaa;
+
+    padding: 50px;
+   /* display: none;*/
+}
+
+
+
+/*header*/
+header {
+    margin: 50px;
+}
+
+header > h2 {
+    float: left;
+    font-size: 40px;
+    margin:
+}
+
+label > input[type=radio] {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px;
+    padding: 0 5px;
+   
+}
+
+label {
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0px 20px;
+    padding: 0 10px;
+}
+
+
+/*nav*/
+nav {
+    padding: 20x;
+}
+
+
+/*메뉴*/
+#choice_wrap {
+    margin: 30px;
+}
+
+#choice {
+    width: 850px;
+    padding: 5px;
+}
+
+/*breadtype*/
+/*#choice_wrap > #choice > #breadtype {
+    overflow: hidden;
+}
+#choice_wrap > #choice > #breadtype > ul {
+    padding-left: 10px;
+    list-style: none;
+}
+#choice_wrap > #choice > #breadtype > ul > li {
+    width: 200px;
+    float: left;
+    list-style: none;
+    font-size: 24px;
+    padding: 10px;
+}*/
+
+/*cheesetype*/
+/*#choice_wrap > #choice > #cheesetype {
+    overflow: hidden;
+}
+#choice_wrap > #choice > #cheesetype > ul {
+    padding-left: 10px;
+    list-style: none;
+}
+#choice_wrap > #choice > #cheesetype > ul > li {
+     width: 200px;
+    float: left;
+    list-style: none;
+    font-size: 24px;
+    padding: 10px;
+}*/
+
+/*vegtype*/
+/*
+#choice_wrap > #choice > #vegtype {
+    overflow: hidden;
+}
+#choice_wrap > #choice > #vegtype > ul {
+    padding-left: 10px;
+    list-style: none;
+}
+#choice_wrap > #choice > #vegtype > ul > li {
+     width: 200px;
+    float: left;
+    list-style: none;
+    font-size: 24px;
+    padding: 10px;
+}
+*/
+
+/*saucetype*/
+/*#choice_wrap > #choice > #saucetype {
+    overflow: hidden;
+}
+#choice_wrap > #choice > #saucetype > ul {
+    padding-left: 10px;
+    list-style: none;
+}
+#choice_wrap > #choice > #saucetype > ul > li {
+     width: 200px;
+    float: left;
+    list-style: none;
+    font-size: 24px;
+    padding: 10px;
+}*/
+
+/*addtype*/
+/*
+#choice_wrap > #choice > #addtype {
+    overflow: hidden;
+}
+#choice_wrap > #choice > #addtype > ul {
+    padding-left: 10px;
+    list-style: none;
+}
+#choice_wrap > #choice > #addtype > ul > li {
+     width: 200px;
+    float: left;
+    list-style: none;
+    font-size: 24px;
+    padding: 10px;
+}
+*/
+
+/*footer*/
+/*
+footer{    
+    text-align: center;
+    position: absolute; 
+    bottom: 0; 
+    width: 100%;
+    left: 0;
+}
+*/
+
+
+
+/*ul>li 속성*/
+.breadtype ul>li{
+    width: 200px;
+    float: left;
+    list-style: none;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.cheesetype ul>li{
+    width: 200px;
+    float: left;
+    list-style: none;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.vegtype ul>li{
+    width: 200px;
+    float: left;
+    list-style: none;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.saucetype ul>li{
+    width: 200px;
+    float: left;
+    list-style: none;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.addtype ul>li{
+    width: 200px;
+    float: left;
+    list-style: none;
+    font-size: 24px;
+    padding: 10px;
+}
+
+
+/*가격*/
+#totalprice{
+    text-align: center;
+    margin: 40px; 
+}
+
+
+/* 취소/담기 버튼*/
+.button {    
+    text-align: center;
+    
+}
+
+.button>#btn{
+    margin: 30px;
+    font-size: 20px;
+    width: 250px;
+    height: 85px;
+    border: 0;
+    border-radius: 90px;
+    background: #46a65e;
+    color: white;
+}
+
+.button>#btn:hover{
+    cursor: pointer;
+    background-color: #ffca08;
+}
+
+input[type=radio]{
+    margin-right:2px;
+    width:24px;
+    height: 24px;
+    border: 3px solid #eee;
+    background-color: #46a65e;
+    
+}
+
+input[type=checkbox]{
+    margin-right:2px;
+    width:24px;
+    height: 24px;
+    border: 3px solid #eee;
+    background-color: #46a65e;
+    
+}
+
+/*슬라이드 버튼 속성*/ 
+/*breadtype*/
+.breadtype{
+    position: relative;
+    
+}
+
+.breadtype button {
+    position: absolute;
+    z-index: 10px;
+    top: 50%;
+    transform: translateY(-50%); 
+    width: 71px;
+    height: 71px;
+    border-radius: 100%;
+    background-color: transparent;
+    border: none;
+}
+
+
+.breadtype button:before{
+    font-family: 'xeicon'; color: #ffca08; font-size: 40px;
+}
+
+.breadtype button:hover{
+     cursor: pointer;
+    background-color: #46a65e;
+}
+
+.breadtype button.slick-prev {
+    font-size: 0; color: transparent;
+    left: -80px;
+}
+
+
+.breadtype button.slick-prev:before {
+    font-family: 'xeicon';
+    content: "\ea47";
+}
+
+.breadtype button.slick-next {
+    font-size: 0; color: transparent;
+    right: -80px;
+}
+.breadtype button.slick-next:before {
+    font-family: 'xeicon';
+    content: "\ea48";
+}
+
+
+/*cheesetype*/
+.cheesetype{
+    position: relative;
+    
+}
+
+.cheesetype button {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%); 
+    width: 71px;
+    height: 71px;
+    border-radius: 100%;
+    background-color: transparent;
+    border: none;
+}
+
+.cheesetype button:before{
+    font-family: 'xeicon'; color: #ffca08; font-size: 40px;
+}
+
+.cheesetype button:hover{
+    cursor: pointer;
+    background-color: #46a65e;
+}
+
+.cheesetype button.slick-prev {
+    font-size: 0; color: transparent;
+    left: -80px;
+}
+
+.cheesetype button.slick-prev:before {
+    font-family: 'xeicon';
+    content: "\ea47";
+}
+
+.cheesetype button.slick-next {
+    font-size: 0; color: transparent;
+    right: -80px;
+}
+
+.cheesetype button.slick-next:before {
+    font-family: 'xeicon';
+    content: "\ea48";
+}
+
+
+/*vegtype*/
+.vegtype{
+    position: relative;
+    
+}
+
+.vegtype button {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%); 
+    width: 71px;
+    height: 71px;
+    border-radius: 100%;
+    background-color: transparent;
+    border: none;
+}
+
+.vegtype button:before{
+    font-family: 'xeicon'; color: #ffca08; font-size: 40px;
+}
+
+.vegtype button:hover{
+     cursor: pointer;
+    background-color: #46a65e;
+}
+
+.vegtype button.slick-prev {
+    font-size: 0; color: transparent;
+    left: -80px;
+}
+
+.vegtype button.slick-prev:before {
+    font-family: 'xeicon';
+    content: "\ea47";
+}
+
+.vegtype button.slick-next {
+    font-size: 0; color: transparent;
+    right: -80px;
+}
+
+.vegtype button.slick-next:before {
+    font-family: 'xeicon';
+    content: "\ea48";
+}
+
+
+/*saucetype*/
+.saucetype{
+    position: relative;
+    
+}
+
+.saucetype button {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%); 
+    width: 71px;
+    height: 71px;
+    border-radius: 100%;
+    background-color: transparent;
+    border: none;
+}
+
+.saucetype button:before{
+    font-family: 'xeicon'; color: #ffca08; font-size: 40px;
+}
+
+.saucetype button:hover{
+     cursor: pointer;
+    background-color: #46a65e;
+}
+
+
+.saucetype button.slick-prev {
+    font-size: 0; color: transparent;
+    left: -80px;
+}
+
+.saucetype button.slick-prev:before {
+    font-family: 'xeicon';
+    content: "\ea47";
+}
+
+.saucetype button.slick-next {
+    font-size: 0; color: transparent;
+    right: -80px;
+}
+
+.saucetype button.slick-next:before {
+    font-family: 'xeicon';
+    content: "\ea48";
+}
+
+/*add type*/
+.addtype{
+    position: relative;
+    
+}
+
+.addtype button {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%); 
+    width: 71px;
+    height: 71px;
+    border-radius: 100%;
+    background-color: transparent;
+    border: none;
+}
+
+.addtype button:before{
+    font-family: 'xeicon'; color: #ffca08; font-size: 40px;
+}
+.addtype button:hover{
+     cursor: pointer;
+    background-color: #46a65e;
+}
+
+.addtype button.slick-prev {
+    font-size: 0; color: transparent;
+    left: -80px;
+}
+
+.addtype button.slick-prev:before {
+    font-family: 'xeicon';
+    content: "\ea47";
+}
+
+.addtype button.slick-next {
+    font-size: 0; color: transparent;
+    right: -80px;
+}
+
+.addtype button.slick-next:before {
+    font-family: 'xeicon';
+    content: "\ea48";
+}
+
+
+
+/*도경*/
+#listresult{
+    height: 140px;
+    padding: 0px 15px;
+    font-size: 24px;
+    font-weight:bold;
+    line-height: 50px;
+    color: #000;
+    
+}
+
+/*alert_msg*/
+div.msg{
+    display: none;
+}
+
+
+
+
