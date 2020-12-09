@@ -15,7 +15,7 @@ h4{
 }
 
 /*main_wrap*/
-.main_wrap {
+div.choice_main_wrap {
     width: 930px;
     height: 1380px;
 
@@ -29,6 +29,7 @@ h4{
     box-shadow: 0px 0px 10px #aaa;
 
     padding: 50px;
+   /* display: none;*/
 }
 
 
@@ -82,14 +83,10 @@ nav {
 /*#choice_wrap > #choice > #breadtype {
     overflow: hidden;
 }
-
-
-
 #choice_wrap > #choice > #breadtype > ul {
     padding-left: 10px;
     list-style: none;
 }
-
 #choice_wrap > #choice > #breadtype > ul > li {
     width: 200px;
     float: left;
@@ -102,14 +99,10 @@ nav {
 /*#choice_wrap > #choice > #cheesetype {
     overflow: hidden;
 }
-
-
-
 #choice_wrap > #choice > #cheesetype > ul {
     padding-left: 10px;
     list-style: none;
 }
-
 #choice_wrap > #choice > #cheesetype > ul > li {
      width: 200px;
     float: left;
@@ -123,14 +116,10 @@ nav {
 #choice_wrap > #choice > #vegtype {
     overflow: hidden;
 }
-
-
-
 #choice_wrap > #choice > #vegtype > ul {
     padding-left: 10px;
     list-style: none;
 }
-
 #choice_wrap > #choice > #vegtype > ul > li {
      width: 200px;
     float: left;
@@ -144,14 +133,10 @@ nav {
 /*#choice_wrap > #choice > #saucetype {
     overflow: hidden;
 }
-
-
-
 #choice_wrap > #choice > #saucetype > ul {
     padding-left: 10px;
     list-style: none;
 }
-
 #choice_wrap > #choice > #saucetype > ul > li {
      width: 200px;
     float: left;
@@ -165,14 +150,10 @@ nav {
 #choice_wrap > #choice > #addtype {
     overflow: hidden;
 }
-
-
-
 #choice_wrap > #choice > #addtype > ul {
     padding-left: 10px;
     list-style: none;
 }
-
 #choice_wrap > #choice > #addtype > ul > li {
      width: 200px;
     float: left;
@@ -282,7 +263,7 @@ input[type=radio]{
 
 .breadtype button {
     position: absolute;
-    z-index: 10;
+    z-index: 10px;
     top: 50%;
     transform: translateY(-50%); 
     width: 71px;
@@ -346,7 +327,7 @@ input[type=radio]{
 }
 
 .cheesetype button:hover{
-     cursor: pointer;
+    cursor: pointer;
     background-color: #46a65e;
 }
 
@@ -512,5 +493,20 @@ input[type=radio]{
     font-family: 'xeicon';
     content: "\ea48";
 }
+
+
+
+/*도경*/
+#listresult{
+    height: 140px;
+    padding: 0px 15px;
+    font-size: 24px;
+    font-weight:bold;
+    line-height: 50px;
+    color: #000;
+    
+}
+
+
 
 
