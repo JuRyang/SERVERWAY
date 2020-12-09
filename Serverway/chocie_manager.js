@@ -1,6 +1,3 @@
-
-
-
 var addlist = [];
 
 
@@ -9,7 +6,7 @@ var addlist = [];
 function value_check(){
    $('input[type="radio"]:checked').each(function (index) {
        if(index!=0){
-        addlist += ' <br> ';
+        addlist += '  ';
        }
         addlist += $(this).val();
     }); 
@@ -109,6 +106,3 @@ function choiceWinClose()
     var choiceDiv = document.querySelector('div.choice_main_wrap');
     choiceDiv.style.display ='none';
 }
-
-
-
