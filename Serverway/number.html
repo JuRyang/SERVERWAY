@@ -3,26 +3,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="number.css">
     <title></title>
-    
-    
+
+
    <script>
        //3초 후 홈화면으로 돌아가기 
       function nextWin(){
-         location="http://www.naver.com"
+         location="http://www.naver.com"/*홈화면으로 이동*/
       }
         </script>
-        
-        
-        
+
+
+
         <SCRIPT>
-            //대기번호 
-        expireDate = new Date
-        expireDate.setMonth(expireDate.getMonth() + 6)
-        hitCt = eval(cookieVal("pageHit"))
+            //결제페이지 들어온 횟수로 카운트 설정
+        waitingNum = new Date
+        waitingNum.setDate(waitingNum.getDate())
+        hitCt = eval(cookieVal("countNum"))
         hitCt++
-        document.cookie = "pageHit=" + hitCt + ";expires=" + expireDate.toGMTString()
+        document.cookie = "countNum=" + hitCt + ";countNum=" + waitingNum.toGMTString()
 
         function cookieVal(cookieName) {
             thisCookie = document.cookie.split("; ")
@@ -33,7 +33,7 @@
             }
             return 0
         }
-        
+
     </SCRIPT>
 
 
@@ -43,18 +43,18 @@
     <div id="wait">
         <form >
     <h1>대기번호</h1>
-    
-    
+
+
     <!--대기번호 숫자-->
     <div id="count">
         <SCRIPT>
             document.write("<font>" + hitCt + "</font>")
         </SCRIPT>
-        
+
     </div>
-    
+
     <div id="date">
-        
+
     <script type="text/javascript">
          var now = new Date();
          var nowYear = now.getFullYear();
@@ -66,7 +66,7 @@
          document.write( + nowYear + '년 ' + nowMonth + '월 ' + nowDate + '일 ' );
 
          document.write( nowHour + '시 ' + nowMt + '분 ');
-        
+
      </script>
         <h3> 결제가 완료되었습니다.</h3>
     </div>
