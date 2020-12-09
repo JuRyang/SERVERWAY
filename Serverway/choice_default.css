@@ -515,4 +515,10 @@ input[type=radio]{
     
 }
 
+/*alert_msg*/
+div.msg{
+    display: none;
+}
+
+
 
