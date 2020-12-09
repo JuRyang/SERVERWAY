@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>choice</title>
+    <!--jqeury library load-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="choice_default.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="main_wrap">
+        <header>
+            <h2>재료 선택</h2>
+            <div id="choice0">
+            <label for="single"><input type="checkbox" name="single" value="single">단품</label>
+            <label for="set"><input type="checkbox" name="set" value="set">세트 (+1,000)</label>
+            </div>
+        </header>
+        <br><br><br>
+        <!--재료 선택 화면 시작-->
+        <div id="choice_wrap">
+            <div id="choice">
+                <div id="breadtype">
+                    <h4>빵</h4>
+                    <ul>
+                        <li><input type="radio" name="bread" value="wheat"> 위트</li>
+                        <li><input type="radio" name="bread" value="honeyoat"> 허니 오트</li>
+                        <li><input type="radio" name="bread" value="hearty"> 하티</li>
+                        <li><input type="radio" name="bread" value="flat"> 플랫</li>
+                    </ul>
+                </div>
+
+                <div id="cheesetype">
+                    <h4>치즈</h4>
+                    <ul>
+                        <li><input type="radio" name="cheese" value="american"> 아메리칸 치즈</li>
+                        <li><input type="radio" name="cheese" value="shredded"> 슈레드</li>
+                        <li><input type="radio" name="cheese" value="mozzarella"> 모차렐라</li>
+                        <li><input type="radio" name="cheese" value="cheesenone"> 치즈 제외</li>
+                    </ul>
+                </div>
+                <br>
+                <div id="vegtype">
+                    <h4>야채</h4>
+                    <ul>
+                        <li><input type="radio" name="vegetable" value="vgnone"> 모든 야채 빼기</li>
+                        <li><input type="radio" name="vegetable" value="lettuce"> 양상추</li>
+                        <li><input type="radio" name="vegetable" value="tomato"> 토마토</li>
+                        <li><input type="radio" name="vegetable" value="cucumber"> 오이</li>
+                        <li><input type="radio" name="vegetable" value="vgnone"> 피망</li>
+                        <li><input type="radio" name="vegetable" value="lettuce"> 양파</li>
+                        <li><input type="radio" name="vegetable" value="tomato"> 피클</li>
+                        <li><input type="radio" name="vegetable" value="cucumber"> 올리브</li>
+                        <li><input type="radio" name="vegetable" value="cucumber"> 할라피뇨</li>
+                    </ul>
+                </div>
+                <br>
+                <div id="saucetype">
+                    <h4>소스</h4>
+                    <ul>
+                        <li><input type="radio" name="sauce" value="sweetonion"> 스윗어니언</li>
+                        <li><input type="radio" name="sauce" value="ranch"> 랜치드레싱</li>
+                        <li><input type="radio" name="sauce" value="sweetchilli"> 스윗 칠리</li>
+                        <li><input type="radio" name="sauce" value="hneymus"> 허니 머스타드</li>
+                        <li><input type="radio" name="sauce" value="mayonnaise"> 마요네즈</li>
+                        <li><input type="radio" name="sauce" value="smokebbq"> 스모크바베큐</li>
+                        <li><input type="radio" name="sauce" value="southwest"> 사우스웨스트</li>
+                        <li><input type="radio" name="sauce" value="salt"> 소금</li>
+                        <li><input type="radio" name="sauce" value="blackpepper"> 후추</li>
+                    </ul>
+                </div>
+                <br>
+                <div id="addtype">
+                    <h4>추가</h4>
+                    <ul>
+                        <li><input type="radio" name="add" value="eggmayo"> 에그마요</li>
+                        <li><input type="radio" name="add" value="pepperoni"> 페페로니</li>
+                        <li><input type="radio" name="add" value="bacon"> 베이컨</li>
+                        <li><input type="radio" name="add" value="avocado"> 아보카도</li>
+                        <li><input type="radio" name="add" value="omelet"> 오믈렛</li>
+
+                    </ul>
+                </div>
+                
+                <!--가격-->
+                <div id="totalprice">
+                    <h4>가격:7,800원</h4>
+                </div>
+
+                <!--버튼-->
+                <div class="button">
+                    <input type="button" value="취소" id="btn">
+                    <input type="button" value="담기" id="btn">
+            </div>
+
+        </div>
+
+        <div id="foot">
+            <footer>
+                
+            </footer>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <!--재료 선택 화면 끝-->
+
+</body></html>
