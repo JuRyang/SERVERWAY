@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>serverway kiosk</title>
 </head>
- 
-<style>
 
+<style>
     * {
         font-size: 1.2em;
         margin: 0;
         padding: 0;
     }
 
-    body {   font-family: 'Nanum Gothic', sans-serif;
+    body {
+        font-family: 'Nanum Gothic', sans-serif;
         background-color: #46A65E;
 
     }
@@ -37,6 +38,7 @@
 
     }
 
+    /*헤더 로고 스타일 시작*/
     header {
         margin: auto;
         padding: 60px 100px;
@@ -49,12 +51,13 @@
         float: right;
         padding: 50px
     }
-
+    /*헤더 로고 스타일 끝*/
+/*베너 스타일시작*/
     .banner {
 
         height: 880px;
         width: 1000px;
-    
+
 
         border: 2px solid #DDD;
 
@@ -70,11 +73,13 @@
 
 
     }
+    /*베너 스타일 끋*/
+    /*버튼 스타일 시작*/
 
     #btn {
-        
-    padding: 70px ;
-           
+
+        padding: 70px;
+
 
 
         overflow: hidden;
@@ -89,7 +94,7 @@
         height: 350px;
 
         margin: 15px;
-        
+
 
         background-color: #038c25;
 
@@ -121,33 +126,41 @@
         background-repeat: no-repeat;
     }
 
-   #btn>div:nth-child(1) {
+    #btn>div:nth-child(1) {
         float: left;
-        
+
 
 
     }
-      #btn>div:nth-child(2) {
+
+    #btn>div:nth-child(2) {
         float: right;
 
 
     }
+        /*버튼 스타일 끝*/
+    
+    래ㅐㅅ
+
 </style>
 
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 
 <script>
+    /*베너*/
     $(document).ready(function() {
         setInterval(function() {
             $('.banner img').first().appendTo('.banner')
         }, 1000);
 
     });
+     
+
 </script>
 
 <body>
 
-
+<!--홈화면 시작-->
     <div id="main_wrap">
 
         <header>
@@ -163,17 +176,23 @@
             <img src="img/main1.PNG">
             <img src="img/main2.PNG">
             <img src="img/main3.PNG">
-           
-           
+
+
 
         </div>
+        <form>
+             <div id="btn">
 
-        <div id="btn">
-            
-            <div class="eat"><a href="#">매장</a></div>
-            <div class="eat"><a href="#">포장</a></div>
+            <div class="eat"><a href="http://127.0.0.1:8762/YUNHYUK/menu_screen.html" id="eatin">매장</a></div>
+            <div class="eat"><a href="http://127.0.0.1:8762/YUNHYUK/menu_screen.html" id="togo">포장</a></div>
 
         </div>
+        </form>
+        <foot>
+        ****현금 고객님께서는 카운터 이용바랍니다****
+        </foot>
+
+   
 
     </div>
 
@@ -183,4 +202,6 @@
 
 
 
-</body></html>
+</body>
+
+</html>
