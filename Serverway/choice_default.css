@@ -14,6 +14,12 @@ h4{
     font-weight: bold;     
 }
 
+p{
+    font-size: 25px;
+    color: #46a65e;
+    font-weight: bold;
+}
+
 /*main_wrap*/
 div.choice_main_wrap {
     width: 930px;
@@ -44,6 +50,8 @@ header > h2 {
     font-size: 40px;
     margin:
 }
+
+
 
 label > input[type=radio] {
     float: left;
