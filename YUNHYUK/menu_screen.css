@@ -277,6 +277,7 @@ div.footer{
     width:1072px;
     margin:0 auto;
     border:1px solid #ffca08;
+    position:relative;
 }
 
 #pay{
@@ -323,3 +324,67 @@ div.footer{
 #return:focus{
     outline:none;
 }
+
+.footer_form{
+    position:absolute;
+    top:80px;
+    left:50px;
+    /*display:none;*/
+}
+
+button[type="button"]{
+    height:30px;
+    width:30px;
+    background-color:#eee;
+    border-top-left-radius:30px;
+    border-bottom-left-radius:30px;
+    border:0;
+    font-size:24px;
+    font-weight:bolder;
+    outline:0;
+    cursor:pointer;
+}
+
+input[type="text"].number1{
+    height:30px;
+    width:50px;
+    background-color:#eee;
+    border:0px;
+    margin:0 -5px;
+    text-align:center;
+    font-size:24px;
+    font-weight:bolder;
+    outline:0;
+    cursor:pointer;
+}
+
+input[type="button"]{
+    height:30px;
+    width:30px;
+    background-color:#eee;
+    border-top-right-radius:30px;
+    border-bottom-right-radius:30px;
+    border:0;
+    font-size:24px;
+    font-weight:bolder;
+    outline:0;
+    cursor:pointer;
+}
+
+/*input[type="text"].menu_txt1{
+    width:200px;
+    border:0;
+    margin-left:30px;
+    margin-right:30px;
+    font-size:24px;
+    font-weight:bolder;
+    outline:0;
+}
+
+input[type="text"].menu_price1{
+    width:200px;
+    border:0;
+    font-size:24px;
+    font-weight:bolder;
+    outline:0;
+}*/
