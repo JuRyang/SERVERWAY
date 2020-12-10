@@ -9,6 +9,9 @@ body{
 
 
 }
+h3, span,a{
+    background-color:white;
+}
 #edit_div{
     margin: auto;
     border: 1px;
@@ -37,7 +40,7 @@ body{
 
 }
 
-#btn input[type=button]{
+#btna input[type=button]{
     font-size: 20pt;
     width:250px;
     height:85px;
@@ -48,7 +51,8 @@ body{
     margin: 300px 30px 20px;
 } 
 
-#btn input[type=button]:hover{
+#btna input[type=button]:hover{
     cursor: pointer;
     background-color: #ffca08;
 }
+
