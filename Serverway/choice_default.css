@@ -8,13 +8,15 @@ body {
     background-color: #038c25;
 }
 h4{
-    margin: 30px 15px;
+    margin: 25px 15px;
     font-size: 30px;
     color:#46a65e;
     font-weight: bold;     
 }
 
 p{
+    margin: 0;
+    padding: 0;
     font-size: 25px;
     color: #46a65e;
     font-weight: bold;
@@ -42,7 +44,7 @@ div.choice_main_wrap {
 
 /*header*/
 header {
-    margin: 50px;
+    margin: 30px 50px;
 }
 
 header > h2 {
