@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <title>serverway orderlist</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+
+<body>
+    <h1>주문목록</h1>
+    <br>
+    <div>
+        <!-- 담은 샌드위치 및 옵션 불러와야함 -->
+        <-- 표처럼 만들기 --></-->
+        <div>
+            <h3 id="sandwich">샌드위치 1</h3>
+            <h4 id="option">허니오트</h4>
+            <h4 id="option">아메리칸치즈</h4>
+            <h3 id="sandwich">샌드위치 1</h3>
+            <h4 id="option">허니오트</h4>
+            <h3 id="sandwich">샌드위치 1</h3>
+            <h4 id="option">허니오트</h4>
+        </div>
+    </div>
+    <br><br><br>
+    <!-- 버튼 클릭 시 메뉴주문화면으로 이동 -->
+    <button type="button" id="btn_order" onClick="location.href='choice2.html'">더 담으러가기</button>
+    <br><br><br><br>
+    <hr>
+    <br><br>
+    <div>
+        <h4 id="cost">총 주문 금액</h4>
+        <h3 id="totalprice">
+            <!-- 총 주문 금액 불러와야함-->
+            7800원
+        </h3>
+        
+    </div>
+    <div>
+        <!-- 메인화면 이동 -->
+        <button type="button" id="btn" onClick="location.href='main.html'"> 결제 취소</button>
+
+        <!-- 결제 진행 창 이동 -->
+        <button type="button" id="btn" onclick="parent.location.href='ing.html'"> 카드 결제</button>
+    </div>
+<span></span>
+
+
+</body></html>
