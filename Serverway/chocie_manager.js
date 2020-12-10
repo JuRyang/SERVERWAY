@@ -1,15 +1,17 @@
-var addlist = [];
 
+
+var addlist = [];
 
 
 //checked된 값 가져오기
 function value_check(){
    $('input[type="radio"]:checked').each(function (index) {
        if(index!=0){
-        addlist += '  ';
+        addlist += ' <br> ';
        }
         addlist += $(this).val();
     }); 
+    // addlist 출력
     alert(addlist);
     /*$('#listresult').html(addlist);*/
 }
@@ -34,8 +36,9 @@ function value_check(){
     }
 }*/
 
-
+// 체크된 값 받기
 function getListValue()  {
+    
   // 선택된 목록 가져오기
   const query = 'input[type="radio"]:checked';
   const selectedList = 
@@ -52,23 +55,23 @@ function getListValue()  {
     = result;
 }
 
-
-// Radio checked된 값 바로 출력
 function getList(event) {
   document.getElementById('result').innerText = 
     event.target.value;
-    
 }
+
 
 // Radio checked 선택해제 가능하게 만들기
 var beforeChecked = -1;
 
    $(function(){
       $(document).on("click", "input[type=radio]", function(e) {
-         var index = $(this).parent().index("li");
+         var index = $(this).parent().index("li,label");
          if(beforeChecked == index) {
          beforeChecked = -1;
          $(this).prop("checked", false);
+             totalprice();
+             getListValue();
          }else{
          beforeChecked = index;
          }
@@ -78,7 +81,7 @@ var beforeChecked = -1;
 
 // 추가 옵션 가격 업데이트
 function totalprice(){
-    /*let sandwitchPrice = parseFloat($('#sandwitch').val() || 0);*/
+    /*let sandwichPrice = parseFloat($('#sandwitch').val() || 0);*/
     let sumprice = 0;
     
     // add radio values
@@ -90,11 +93,13 @@ function totalprice(){
     $('#sumprice').text((sumprice).toFixed(0));
 }
 
+// total price
 $(function(){
     $(document).on('change', '.radio5', totalprice);
     totalprice();
 })
 
+// 가격에 컴마찍기
 function addComma(num) {
   var regexp = /\B(?=(\d{3})+(?!\d))/g;
   return num.toString().replace(regexp, ',');
@@ -106,3 +111,6 @@ function choiceWinClose()
     var choiceDiv = document.querySelector('div.choice_main_wrap');
     choiceDiv.style.display ='none';
 }
+
+
+
