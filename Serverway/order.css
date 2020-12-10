@@ -1,4 +1,4 @@
-*{
+* {
     background-color: #46a65e;
 }
 
@@ -14,12 +14,16 @@ body {
     box-shadow: 0px 0px 10px #aaa;
 }
 
+img {
+    background-color: white;
+}
+
 h1 {
     background-color: white;
     font-size: 35pt;
 }
 
-div{
+div {
     background-color: white;
 }
 
@@ -29,8 +33,8 @@ div{
     text-indent: 4em;
     color: #46a65e;
     font-size: 30pt;
-    
-    
+
+
 }
 
 #option {
@@ -46,7 +50,7 @@ div{
 
 }
 
-tbody td{   
+tbody td {
     font-family: 'Nanum Gothic', sans-serif;
     height: 50px;
 }
@@ -63,13 +67,14 @@ hr {
     font-size: 24pt;
 }
 
-#sumprice {
+#totalcost {
     background-color: white;
     color: #46a65e;
     font-size: 24pt;
 }
 
-#btn {
+#btn,
+#popbutton {
     font-size: 25px;
     font-family: 'Nanum Gothic', sans-serif;
     margin: 20px 70px auto;
@@ -102,4 +107,19 @@ hr {
 #btn_order:hover {
     cursor: pointer;
     background-color: #46a65e;
+}
+
+.modal {
+    margin: 300px auto;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 50;
+    top: 0;
+    overflow: hidden;
+
+    border: 3px solid black;
+    border-radius: 90px;
+
+
 }
