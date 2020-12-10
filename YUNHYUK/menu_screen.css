@@ -271,3 +271,55 @@ div.etc_img ul a{
     text-decoration:none;
     font-weight:bolder;
 }
+
+div.footer{
+    height:400px;
+    width:1072px;
+    margin:0 auto;
+    border:1px solid #ffca08;
+}
+
+#pay{
+    height:85px;
+    width:250px;
+    font-size:30px;
+    font-weight:bolder;
+    color:#fff;
+    border:0;
+    border-radius:50px;
+    background-color:#46a65e;
+    float:right;
+    margin-top:75px;
+    margin-right:80px;
+}
+
+#pay:hover{
+    cursor:pointer;
+    background-color:#ffca08;
+}
+
+#pay:focus{
+    outline:none;
+}
+
+#return{
+    height:85px;
+    width:250px;
+    font-size:30px;
+    font-weight:bolder;
+    color:#fff;
+    border:0;
+    border-radius:50px;
+    background-color:#46a65e;
+    margin-top:75px;
+    margin-left:742px;
+}
+
+#return:hover{
+    cursor:pointer;
+    background-color:#ffca08;
+}
+
+#return:focus{
+    outline:none;
+}
