@@ -112,5 +112,11 @@ function choiceWinClose()
     choiceDiv.style.display ='none';
 }
 
-
+// 메뉴선택창 팝업
+function choiceWindow(){
+    
+    var choiceDiv = document.querySelector('div.choice_main_wrap');
+    choiceDiv.style.display = 'block';
+    
+}
 
