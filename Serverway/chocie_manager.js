@@ -50,10 +50,6 @@ function getListValue() {
 
     // list 출력
     document.getElementById('listresult').innerText = result;
-
-    
-   
-
 }
 
 function getList(event) {
@@ -111,3 +107,5 @@ function choiceWinClose() {
     var choiceDiv = document.querySelector('div.choice_main_wrap');
     choiceDiv.style.display = 'none';
 }
+
+
