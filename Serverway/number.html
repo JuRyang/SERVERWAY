@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="number.css">
+<<<<<<< Updated upstream
     <title></title>
 
 
@@ -18,6 +20,33 @@
 
         <SCRIPT>
             //결제페이지 들어온 횟수로 카운트 설정
+=======
+    <title>번호표 대기</title>
+    <!--jquery 라이브러리 로드-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+    <script>
+
+        $(document).ready(function() {
+            setTimeout(function() {
+                location.href = 'main.html';
+            }, 3000);
+        });
+    </script>
+
+
+    <SCRIPT>
+        //대기번호 
+        waitingNum = new Date
+        waitingNum.setDate(waitingNum.getDate())
+        hitCt = eval(cookieVal("pageHit"))
+        hitCt++
+        document.cookie = "pageHit=" + hitCt + ";waiting=" + waitingNum.toGMTString()
+
+
+
+        //결제페이지 들어온 횟수로 카운트 설정
+>>>>>>> Stashed changes
         waitingNum = new Date
         waitingNum.setDate(waitingNum.getDate())
         hitCt = eval(cookieVal("countNum"))
@@ -33,7 +62,6 @@
             }
             return 0
         }
-
     </SCRIPT>
 
 
@@ -41,10 +69,11 @@
 
 <body onload="setTimeout('nextWin()',1000*3)">
     <div id="wait">
-        <form >
-    <h1>대기번호</h1>
+        <form>
+            <h1>대기번호</h1>
 
 
+<<<<<<< Updated upstream
     <!--대기번호 숫자-->
     <div id="count">
         <SCRIPT>
@@ -58,23 +87,44 @@
             </h4>
 
     <div id="date">
+=======
 
-    <script type="text/javascript">
-         var now = new Date();
-         var nowYear = now.getFullYear();
-         // getMonth 는 0 부터 인덱스가 시작하기 때문에 + 1 
-         var nowMonth = now.getMonth() + 1; 
-         var nowDate = now.getDate();
-         var nowHour = now.getHours();
-         var nowMt = now.getMinutes();                 
-         document.write( + nowYear + '년 ' + nowMonth + '월 ' + nowDate + '일 ' );
+            <!--대기번호 숫자-->
+            <div id="count">
+                <SCRIPT>
+                    document.write("<font>" + hitCt + "</font>")
+                </SCRIPT>
 
-         document.write( nowHour + '시 ' + nowMt + '분 ');
 
-     </script>
-        <h3> 결제가 완료되었습니다.</h3>
-    </div>
-            </form>
+            </div>
+
+            <div id="date">
+>>>>>>> Stashed changes
+
+
+            </div>
+            <h4>대기인수:<SCRIPT>
+                    document.write("<font1>" + (hitCt - 1) + "</font1>")
+                </SCRIPT>
+            </h4>
+
+            <div id="date">
+
+                <script type="text/javascript">
+                    var now = new Date();
+                    var nowYear = now.getFullYear();
+                    // getMonth 는 0 부터 인덱스가 시작하기 때문에 + 1 
+                    var nowMonth = now.getMonth() + 1;
+                    var nowDate = now.getDate();
+                    var nowHour = now.getHours();
+                    var nowMt = now.getMinutes();
+                    document.write(+nowYear + '년 ' + nowMonth + '월 ' + nowDate + '일 ');
+
+                    document.write(nowHour + '시 ' + nowMt + '분 ');
+                </script>
+                <h3> 결제가 완료되었습니다.</h3>
+            </div>
+        </form>
     </div>
 </body>
 </html>
