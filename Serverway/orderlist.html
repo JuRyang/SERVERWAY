@@ -24,11 +24,12 @@
 </head>
 
 <body>
-    <br>
-    <img src="img/logo.png">
-    <h1>주문목록</h1>
-    <br>
-    <div>
+
+    <div id="order_body">
+        <br>
+        <img src="img/logo.png">
+        <h1 id="order_h1">주문목록</h1>
+        <br>
         <!-- 담은 샌드위치 및 옵션 불러와야함 -->
         <div>
             <h3 id="sandwich">샌드위치 1</h3>
@@ -54,33 +55,35 @@
             <h4 id="option">허니오트</h4>
             <h4 id="option">허니오트</h4>
         </div>
-    </div>
-    <br><br><br>
-    <!-- 버튼 클릭 시 메뉴주문화면으로 이동 -->
-    <button type="button" id="btn_order" onClick="location.href='menu_screen.html'">더 담으러가기</button>
-    <br><br><br><br>
-    <hr>
-    <br><br>
-    <div>
-        <h4 id="cost">총 주문 금액</h4>
-        <h3 id="totalcost">
-            <!-- 총 주문 금액 불러와야함-->
-            원
-        </h3>
+        <br><br><br>
+        <!-- 버튼 클릭 시 메뉴주문화면으로 이동 -->
+        <button type="button" id="btn_order" onClick="location.href='menu_screen.html'">더 담으러가기</button>
+        <br><br><br><br>
+        <hr id="order_hr">
+        <br><br>
+        <div>
+            <h4 id="cost">총 주문 금액</h4>
+            <h3 id="totalcost">
+                <!-- 총 주문 금액 불러와야함-->
+                원
+            </h3>
 
-    </div>
-    <div>
+        </div>
+        <div>
 
-        <!-- 메인화면 이동 -->
-        <button id="btn" onClick="location.href='main.html'"> 결제 취소</button>
+            <!-- 메인화면 이동 -->
+            <button id="order_btn" onClick="location.href='main.html'"> 결제 취소</button>
 
-    <button class="btn btn-default" id="popbutton">카드 결제</button><br />
-    <div class="modal fade">
-        <div class="modal-dialog">
-            <div class="modal-content">
+            <!-- 결제 진행 창 이동 -->
+            <button class="btn btn-default" id="popbutton">카드 결제</button><br />
+            <div class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
 
-    </div>
 </body></html>

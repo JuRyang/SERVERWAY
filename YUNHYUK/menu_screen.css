@@ -329,9 +329,9 @@ div.footer{
     position:absolute;
     top:80px;
     left:50px;
-    /*display:none;*/
 }
 
+/*
 button[type="button"]{
     height:30px;
     width:30px;
@@ -370,6 +370,7 @@ input[type="button"]{
     outline:0;
     cursor:pointer;
 }
+*/
 
 /*input[type="text"].menu_txt1{
     width:200px;
