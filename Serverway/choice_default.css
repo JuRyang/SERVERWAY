@@ -43,8 +43,8 @@ div.choice_main_wrap {
     
     top:50px;
     left:470px;
-    
 }
+
 
 
 
@@ -53,7 +53,7 @@ header {
     margin: 30px 50px;
 }
 
-header > h2 {
+h3{
     float: left;
     font-size: 40px;
     margin:

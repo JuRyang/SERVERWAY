@@ -10,9 +10,10 @@ function value_check() {
         addlist += $(this).val();
     });
     // addlist 출력
-    alert(addlist);
-    /*$('#listresult').html(addlist);*/
+    /*alert(addlist);*/
+   $('#listresult').html(addlist);
 }
+
 
 //checked 여부 확인
 /*function validate_check() {
@@ -34,7 +35,10 @@ function value_check() {
     }
 }*/
 
-// 체크된 값 받기
+
+
+
+// add 체크된 값 받기
 function getListValue() {
 
     // 선택된 목록 가져오기
@@ -51,6 +55,7 @@ function getListValue() {
     // list 출력
     document.getElementById('listresult').innerText = result;
 }
+
 
 function getList(event) {
     document.getElementById('result').innerText =
@@ -116,4 +121,18 @@ function choiceWindow(){
     choiceDiv.style.display = 'block';
     
 }
+
+// 오더리스트 윈도우
+function orderlistWindow(){
+    
+    var orderDiv = document.querySelector('div.orderlist_main_wrap');
+    orderDiv.style.display = 'block';   
+}
+
+// 오더리스트 닫기
+function orderWinClose() {
+    var orderDiv = document.querySelector('div.orderlist_main_wrap');
+    choiceDiv.style.display = 'none';
+}
+
 

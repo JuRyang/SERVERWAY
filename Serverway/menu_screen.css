@@ -3,14 +3,27 @@
 *{
     margin:0;
     padding:0;
-    font-family:'Nanum Gothic', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
     list-style:none;
+}
+
+body{
+    background-color: #46a65e;
+}
+
+h4{
+    margin: 25px 15px;
+    font-size: 30px;
+    color:#46a65e;
+    font-weight: bold;     
 }
 
 div.menu_screen{
     background-color:#fff;
     width:1080px;
+    height: 1920px;
     margin:auto;
+    
 }
 
 div.header{
@@ -22,12 +35,25 @@ div.header{
     margin-right:auto;
 }
 
+.header > img{
+    margin: 50px 0px;
+}
+
 h2{
-    font-size:30px;
+    font-size:40px;
     font-weight:bolder;
-    margin:30px;
+    padding:50px;
     text-align:center;
 }
+
+p{
+    font: 24px;
+}
+
+div.cart td{
+    padding: 20px;
+}
+
 
 div.menu input[type="radio"]{
     display:none;
@@ -124,7 +150,7 @@ div.sand_img ul li img{
 }
 
 div.sand_img ul li.sand_text{
-    font-size:25px;
+    font-size:24px;
     font-weight:bolder;
     text-align:center;
     margin-top:20px;
@@ -277,6 +303,7 @@ div.footer{
     width:1072px;
     margin:0 auto;
     border:1px solid #ffca08;
+    position:relative;
 }
 
 #pay{
@@ -302,7 +329,7 @@ div.footer{
     outline:none;
 }
 
-#return{
+/*#return{
     height:85px;
     width:250px;
     font-size:30px;
@@ -313,7 +340,7 @@ div.footer{
     background-color:#46a65e;
     margin-top:75px;
     margin-left:742px;
-}
+}*/
 
 #return:hover{
     cursor:pointer;
@@ -323,3 +350,130 @@ div.footer{
 #return:focus{
     outline:none;
 }
+
+.footer_form{
+    position:absolute;
+    top:80px;
+    left:50px;
+    /*display:none;*/
+}
+
+/*
+#button[type="button"]{
+    height:30px;
+    width:30px;
+    background-color:#eee;
+    border-top-left-radius:30px;
+    border-bottom-left-radius:30px;
+    border:0;
+    font-size:24px;
+    font-weight:bolder;
+    outline:0;
+    cursor:pointer;
+}
+*/
+.cart{
+    width: 600px;
+    height: 380px;
+    margin: 40px;
+    float: left;
+}
+
+.sumbtn{
+    margin: 5px;
+    width: 300px;
+    height: 380px;
+    float: right;
+}
+
+#button[type="button"]{
+    height:85px;
+    width:250px;
+    font-size:30px;
+    font-weight:bolder;
+    color:#fff;
+    border:0;
+    border-radius:50px;
+    background-color:#46a65e;
+    margin-top:75px;
+    outline:0;
+    cursor:pointer;
+}
+
+
+
+input[type="text"].number1{
+    height:30px;
+    width:30px;
+    background-color:#eee;
+    border:0px;
+    margin:0 -5px;
+    text-align:center;
+    font-size:24px;
+    font-weight:bolder;
+    outline:0;
+    cursor:pointer;
+}
+
+
+
+#pnbtn{
+    width:30px;
+    height:30px;
+    font-size:26px;
+    border-radius:10px;
+    border:0px;
+    background-color:#aaa;
+    color: #fff;
+}
+
+.numinput{
+    margin:0px;
+    width:60px;
+    height: 33px;
+    border-radius:10px;
+    border: 3px solid #aaa;
+    font-size:24px;
+    text-align: right;
+    font-weight: bold;
+    color: #46a65e;
+}
+
+.cart td{
+    font-size: 22px;
+    font-weight: bold;
+    color: #46a65e;
+    
+}
+
+.modal css{
+    margin: 300px auto;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 50;
+    top: 0;
+    overflow: hidden;
+
+    border: 3px solid black;
+    border-radius: 90px;
+}
+
+
+/*input[type="text"].menu_txt1{
+    width:200px;
+    border:0;
+    margin-left:30px;
+    margin-right:30px;
+    font-size:24px;
+    font-weight:bolder;
+    outline:0;
+}
+
+input[type="text"].menu_price1{
+    width:200px;
+    border:0;
+    font-size:24px;
+    font-weight:bolder;
+    outline:0;
+}*/
