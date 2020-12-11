@@ -117,3 +117,9 @@ function choiceWindow(){
     
 }
 
+//결제창 팝업
+function payWindow(){
+    var payDiv=document.querySelector('div.orderlist_main_wrap');
+    payDiv.style.display='block';
+}
+

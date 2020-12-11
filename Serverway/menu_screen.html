@@ -7,7 +7,6 @@
 
 
     <link rel="stylesheet" href="menu_screen.css">
-    <script src="menu_screen.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <!--<script src="chocie_manager.js"></script>-->
 
@@ -369,12 +368,7 @@
 
         <!--푸터 시작-->
         <div class="footer">
-
-            <div class="order_list">
-
-            </div>
-
-
+            <div></div>
             <table class="table">
                 <form name="form" class="footer_form" method="get">
                     <input type="hidden" name="sell_price">
@@ -385,10 +379,8 @@
                     <input type="text" name="amount" class="number1" value="1" onchange="javascript:change();" readonly>
 
                     <input type="button" value="+" onclick="javascript:add();">
-
-                    <!--<input type="text" name="sum" class="menu_txt1" readonly>
-                    <input type="text" name="sum" class="menu_price1" readonly>-->
                 </form>
+                
 
                 <tbody id="order_list">
                     <tr>
@@ -400,7 +392,7 @@
 
 
             <div class="button">
-                <a href="javascript:payWindow()">
+                <a href="javascript:payWindow();">
                     <input type="submit" id="pay" value="결제">
                 </a>
                 
@@ -679,9 +671,8 @@
         </div>
 
     </div>
-    </div>
 
-    </div>
+   
 
 
 
