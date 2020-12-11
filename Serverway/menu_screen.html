@@ -389,7 +389,7 @@
                     <!--<input type="text" name="sum" class="menu_txt1" readonly>
                     <input type="text" name="sum" class="menu_price1" readonly>-->
                 </form>
-                
+
                 <tbody id="order_list">
                     <tr>
                         <th>제품명</th>
@@ -397,7 +397,7 @@
                     </tr>
                 </tbody>
             </table>
-            
+
 
             <div class="button">
                 <a href="javascript:payWindow()">
@@ -517,7 +517,8 @@
                     </section>
 
                     <br>
-                    <h4>추가<p># 취소를 원하시면 한번 더 클릭해주세요.<p>
+                    <h4>추가<p># 취소를 원하시면 한번 더 클릭해주세요.
+                        <p>
                     </h4>
                     <section class="addtype">
                         <ul>
@@ -568,15 +569,15 @@
 
                 </div>
             </div>
-            
-        <script>
-            $("#set").prop("checked", true);
-            $("#nonebread").prop("checked", true);
-            $("#nonecheese").prop("checked", true);
-            $("#allveg").prop("checked", true);
-            $("#sauce").prop("checked", true);
-            $("#none").prop("checked", true);
-        </script>
+
+            <script>
+                $("#set").prop("checked", true);
+                $("#nonebread").prop("checked", true);
+                $("#nonecheese").prop("checked", true);
+                $("#allveg").prop("checked", true);
+                $("#sauce").prop("checked", true);
+                $("#none").prop("checked", true);
+            </script>
 
             <!--푸터 종료-->
         </div>
@@ -590,14 +591,8 @@
 
 
 
-
-
-
-
-
-
         <!--재료 선택 화면 끝-->
-        
+
 
 
 
@@ -609,18 +604,24 @@
                 <div class="modal-content">
                 </div>
             </div>
-        </div>s
+        </div>
         <!--메뉴 종료-->
     </div>
     <div class="orderlist_main_wrap">
-        <img src="img/logo.png">
-        <h1>주문목록</h1>
-        <br>
-        <div>
+        <div id="order_body">
+            <br>
+            <img src="img/logo.png">
+            <h1 id="order_h1">주문목록</h1>
+            <br>
             <!-- 담은 샌드위치 및 옵션 불러와야함 -->
             <div>
                 <h3 id="sandwich">샌드위치 1</h3>
-                <h4 id="listresult"> </h4>
+                <h4 id="option">허니오트</h4>
+                <h4 id="option">아메리칸치즈</h4>
+                <h4 id="option">허니오트</h4>
+                <h4 id="option">허니오트</h4>
+                <h4 id="option">허니오트</h4>
+                <h4 id="option">허니오트</h4>
                 <h3 id="sandwich">샌드위치 2</h3>
                 <h4 id="option">허니오트</h4>
                 <h4 id="option">허니오트</h4>
@@ -637,54 +638,50 @@
                 <h4 id="option">허니오트</h4>
                 <h4 id="option">허니오트</h4>
             </div>
-        </div>
-        <br><br><br>
-        <!-- 버튼 클릭 시 메뉴주문화면으로 이동 -->
-        <button type="button" id="btn_order" onClick="location.href='menu_screen.html'">더 담으러가기</button>
-        <br><br><br><br>
-        <hr>
-        <br><br>
-        <div>
-            <h4 id="cost">총 주문 금액</h4>
-            <h3 id="totalcost">
-                <!-- 총 주문 금액 불러와야함-->
-                원
-            </h3>
+            <br><br><br>
+            <!-- 버튼 클릭 시 메뉴주문화면으로 이동 -->
+            <button type="button" id="btn_order" onClick="location.href='menu_screen.html'">더 담으러가기</button>
+            <br><br><br><br>
+            <hr id="order_hr">
+            <br><br>
+            <div>
+                <h4 id="cost">총 주문 금액</h4>
+                <h3 id="totalcost">
+                    <!-- 총 주문 금액 불러와야함-->
+                    원
+                </h3>
 
-        </div>
-        <div>
+            </div>
+            <div>
 
-            <!-- 메인화면 이동 -->
-            <button id="btn" onClick="location.href='main.html'"> 결제 취소</button>
+                <!-- 메인화면 이동 -->
+                <button id="order_btn" onClick="location.href='main.html'"> 결제 취소</button>
 
-            <!-- 결제 진행 창 이동 -->
-            <button class="btn btn-default" id="popbutton">카드 결제</button><br />
-
-            <div class="modal fade">
-                <div class="modal-dialog">
-                    <div class="modal-content">
+                <!-- 결제 진행 창 이동 -->
+                <button class="btn btn-default" id="popbutton">카드 결제</button><br />
+                <div class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        </div>
                     </div>
                 </div>
+
             </div>
-
         </div>
+
+
+
+
+        <!--버튼-->
+        <div class="button">
+            <input onclick="choiceWinClose()" type="button" value="취소" id="btn">
+            <input onclick="value_check()" type="button" value="담기" id="btn">
+        </div>
+
     </div>
-</body>
+    </div>
 
-
-
->>>>>>> Stashed changes
-
-<!--버튼-->
-<div class="button">
-    <input onclick="choiceWinClose()" type="button" value="취소" id="btn">
-    <input onclick="value_check()" type="button" value="담기" id="btn">
-</div>
-
-</div>
-</div>
-
-</div>
+    </div>
 
 
 
