@@ -5,14 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serverway Menu Screen</title>
+
     <link rel="stylesheet" href="menu_screen.css">
     <script src="menu_screen.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <!--<script src="chocie_manager.js"></script>-->
-<<<<<<< Updated upstream
     
-=======
-
     <!--한경주량 script파일들-->
     <link rel="stylesheet" href="order.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
@@ -57,8 +55,6 @@
 
 
 
-
->>>>>>> Stashed changes
     <script type="text/javascript">
         $(function() {
             $(".choiceWin").click(function() {
@@ -79,7 +75,6 @@
             })
         });
     </script>-->
-<<<<<<< Updated upstream
     
 <script>$(document).ready(function(){     
     // 플러스 버튼
@@ -108,7 +103,79 @@
 });
 </script>
 
-=======
+
+    <link rel="stylesheet" href="menu_screen.css">
+
+
+    <link rel="stylesheet" href="menu_screen.css">
+    <script src="menu_screen.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <!--<script src="chocie_manager.js"></script>-->
+
+    <!--한경주량 script파일들-->
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js">
+    </script>
+    <!--한경주량 script파일들-->
+
+
+    <script src="chocie_manager.js"></script>
+
+
+    <!--수인도경 script파일들-->
+    <!--12/08 12:40 수인 추가 슬라이드 버튼-->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <!--12/08 12:40 수인 추가 슬라이드 버튼 css-->
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!--jqeury library load-->
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <!---->
+
+    <!--12/08 12:40 수인 추가 슬라이드 버튼 script-->
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!--css 연결-->
+    <link rel="stylesheet" href="choice_default.css">
+    <!--폰트-->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <!--js-->
+    <!--수인도경 script파일들 끝-->
+
+
+    <script type="text/javascript">
+        $(function() {
+            $("#popbutton").click(function() {
+                $('div.modal').modal({
+                    remote: 'payment.html'
+                });
+            })
+        })
+    </script>
+
+
+
+
+    <script type="text/javascript">
+        $(function() {
+            $(".choiceWin").click(function() {
+                $('div.modal').modal({
+                    remote: 'choice.html'
+                });
+            })
+        });
+    </script>
+
+    <!-- <script type="text/javascript">
+        $(function() {
+            $("#choiceWin").click(function() {
+                $('div.modal').modal({
+                    remote: 'choice.html'
+                });
+            })
+        });
+    </script>-->
+
 
     <link rel="stylesheet" href="menu_screen.css">
     <!--12/08 12:40 수인 추가 슬라이드 버튼-->
@@ -125,7 +192,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
     <!--js-->
     <script src="chocie_manager.js"></script>
->>>>>>> Stashed changes
 </head>
 
 <body>
@@ -142,10 +208,7 @@
 
         <!--메뉴 시작-->
         <div class="menu">
-<<<<<<< Updated upstream
             <!--<input type="radio" name="kategorie" id="sand" checked>-->
-=======
->>>>>>> Stashed changes
             <input type="radio" name="kategorie" id="sand" checked>
             <label for="sand" class="menu_sand">샌드위치</label>
 
@@ -154,7 +217,14 @@
 
             <input type="radio" name="kategorie" id="salad">
             <label for="salad" class="menu_salad">샐러드</label>
+            <input type="radio" name="kategorie" id="sand" checked>
+            <label for="sand" class="menu_sand">샌드위치</label>
 
+            <input type="radio" name="kategorie" id="wrap">
+            <label for="wrap" class="menu_wrap">랩</label>
+
+            <input type="radio" name="kategorie" id="salad">
+            <label for="salad" class="menu_salad">샐러드</label>
             <input type="radio" name="kategorie" id="etc">
             <label for="etc" class="menu_etc">기타</label>
 
@@ -165,30 +235,45 @@
                         <li class="sand_text">에그마요</li>
                     </a>
                 </ul>
-<<<<<<< Updated upstream
                  
 
                 <ul>
                     <a href="#" class="choiceWin" data-menu="4300">
-=======
 
                 <ul>
                     <a href="javascript:choiceWindow()" data-menu="4300">
->>>>>>> Stashed changes
                         <li><img src="../YUNHYUK/images/sand/ItalianBMT.jpg"></li>
                         <li class="sand_text">이탈리안 비엠티</li>
                     </a>
                 </ul>
 
                 <ul>
-<<<<<<< Updated upstream
                     <a href="#" class="popbutton" data-menu="4300">
-=======
                     <a href="javascript:choiceWindow()" data-menu="4300">
->>>>>>> Stashed changes
                         <li><img src="../YUNHYUK/images/sand/BLT.jpg"></li>
                         <li class="sand_text">비엘티</li>
                     </a>
+
+                <ul>
+
+                    <a href="../Serverway/choice.html">
+
+                        <a href="javascript:choiceWindow()" data-menu="4300">
+
+                            <li><img src="../YUNHYUK/images/sand/ItalianBMT.jpg"></li>
+                            <li class="sand_text">이탈리안 비엠티</li>
+                        </a>
+                </ul>
+
+                <ul>
+
+                    <a href="../Serverway/choice.html">
+
+                        <a href="javascript:choiceWindow()" data-menu="4300">
+
+                            <li><img src="../YUNHYUK/images/sand/BLT.jpg"></li>
+                            <li class="sand_text">비엘티</li>
+                        </a>
                 </ul>
 
                 <ul>
@@ -233,11 +318,6 @@
                     </a>
                 </ul>
             </div>
-<<<<<<< Updated upstream
-            
-           
-=======
->>>>>>> Stashed changes
 
             <div class="wrap_img">
                 <ul>
@@ -420,7 +500,7 @@
                 </ul>
             </div>
         </div>
-<<<<<<< Updated upstream
+
     <!--<div class="modal fade">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -471,14 +551,39 @@
         <!--메뉴 종료-->
     </div>
 </body>
-=======
         <!--메뉴 종료-->
 
         <!--푸터 시작-->
         <div class="footer">
+
             <div class="order_list">
 
             </div>
+
+
+            <table class="table">
+                <form name="form" class="footer_form" method="get">
+                    <input type="hidden" name="sell_price">
+
+                    <button type="button" onclick="javascript:del();">-</button>
+
+
+                    <input type="text" name="amount" class="number1" value="1" onchange="javascript:change();" readonly>
+
+                    <input type="button" value="+" onclick="javascript:add();">
+
+                    <!--<input type="text" name="sum" class="menu_txt1" readonly>
+                    <input type="text" name="sum" class="menu_price1" readonly>-->
+                </form>
+
+                <tbody id="order_list">
+                    <tr>
+                        <th>제품명</th>
+                        <th>가격</th>
+                    </tr>
+                </tbody>
+            </table>
+
 
             <div class="button">
                 <input type="submit" id="pay" value="결제">
@@ -501,7 +606,6 @@
 
                 <div id="choice0">
                     <label><input type="radio" class="radio5" name="choice0" value="단품" data-price="0" onclick='getListValue()'>단품</label>
-
                     <label><input type="radio" class="radio5" name="choice0" value="세트" data-price="1000" onclick='getListValue()' checked>세트 (+1,000)</label>
                 </div>
             </header>
@@ -788,6 +892,19 @@
                         $('.addtype').slick();
 
                     </script>
+                    <script type="text/javascript">
+                        $('.cheesetype').slick();
+                    </script>
+                    <script type="text/javascript">
+                        $('.vegtype').slick();
+                    </script>
+                    <script type="text/javascript">
+                        $('.saucetype').slick();
+                    </script>
+                    <script type="text/javascript">
+                        $('.addtype').slick();
+
+                    </script>
 
                     <!--가격-->
                     <!--선택한 샌드위치 이름 들어갈 곳-->
@@ -873,7 +990,6 @@
 
                 </div>
                 <div>
->>>>>>> Stashed changes
 
                     <!-- 메인화면 이동 -->
                     <button id="btn" onClick="location.href='main.html'"> 결제 취소</button>
@@ -881,19 +997,10 @@
                     <!-- 결제 진행 창 이동 -->
                     <button class="btn btn-default" id="popbutton">카드 결제</button><br />
 
-<<<<<<< Updated upstream
 
 
 
 </html>
-=======
-                    <div class="modal fade">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
 
@@ -908,4 +1015,19 @@
 </body>
 
 </html>
->>>>>>> Stashed changes
+        <!--버튼-->
+        <div class="button">
+            <input onclick="choiceWinClose()" type="button" value="취소" id="btn">
+            <input onclick="value_check()" type="button" value="담기" id="btn">
+        </div>
+
+    </div>
+    </div>
+
+    </div>
+
+
+
+
+
+</body></html>

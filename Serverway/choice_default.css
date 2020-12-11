@@ -2,24 +2,30 @@
     margin: 0;
     padding: 0;
     font-family: 'Nanum Gothic', sans-serif;
+    
 }
 
 body {
-    background-color: #038c25;
+   background-color: #46a65e;
 }
 h4{
+    text-align: left;
     margin: 25px 15px;
     font-size: 30px;
     color:#46a65e;
-    font-weight: bold;     
+    font-weight: bold; 
+    background-color: #f2f2f2;
+    
 }
 
 p{
+    text-align: left;
     margin: 0;
     padding: 0;
     font-size: 25px;
     color: #46a65e;
     font-weight: bold;
+    background-color: #f2f2f2;
 }
 
 /*main_wrap*/
@@ -43,6 +49,7 @@ div.choice_main_wrap {
     
     top:50px;
     left:470px;
+
 }
 
 
@@ -51,12 +58,14 @@ div.choice_main_wrap {
 /*header*/
 header {
     margin: 30px 50px;
+    
 }
 
 h3{
     float: left;
     font-size: 40px;
-    margin:
+    margin: 0;
+    background-color: #f2f2f2;
 }
 
 
@@ -88,11 +97,13 @@ nav {
 /*메뉴*/
 #choice_wrap {
     margin: 30px;
+    background-color: #f2f2f2;
 }
 
 #choice {
     width: 850px;
     padding: 5px;
+    background-color: #f2f2f2;
 }
 
 /*breadtype*/
@@ -198,6 +209,11 @@ footer{
     font-size: 24px;
     padding: 10px;
     font-weight: bold;
+    background-color: #f2f2f2;
+}
+
+div.choice_main_wrap label{
+    background-color: #f2f2f2;
 }
 
 /*.cheesetype ul>li{
@@ -234,12 +250,14 @@ footer{
 #totalprice{
     text-align: center;
     margin: 40px; 
+    background-color: #f2f2f2;
 }
 
 
 /* 취소/담기 버튼*/
 .button {    
     text-align: center;
+    background-color: #f2f2f2;
     
 }
 
@@ -252,6 +270,7 @@ footer{
     border-radius: 90px;
     background: #46a65e;
     color: white;
+    
 }
 
 .button>#btn:hover{
@@ -265,6 +284,7 @@ input[type=radio]{
     height: 24px;
     border: 3px solid #eee;
     background-color: #46a65e;
+    
     
 }
 
@@ -513,11 +533,13 @@ input[type=radio]{
 /*도경*/
 #listresult{
     height: 140px;
+    margin: 0;
     padding: 0px 15px;
     font-size: 24px;
     font-weight:bold;
     line-height: 50px;
     color: #000;
+    background-color: #f2f2f2;
     
 }
 
@@ -525,11 +547,17 @@ input[type=radio]{
    margin: 0;
     font-size: 30px;
     font-weight: bold;
-    
+    text-align: center;
 }
 
 /*alert_msg*/
 div.msg{
     display: none;
 }
+
+#sumprice{
+    text-align: center;
+}
+
+
 
