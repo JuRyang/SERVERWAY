@@ -16,6 +16,17 @@
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js">
     </script>
+    
+    <!-- 결제진행중 화면 주량한경-->
+    <link rel="stylesheet" href="ing.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script>
+        function payingWindow() {
+            var payingDiv = document.querySelector('div.payment_main_wrap');
+            payingDiv.style.display = 'block';
+        }
+    </script>
+
     <!--한경주량 script파일들-->
 
 
@@ -90,6 +101,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
     <!--js-->
     <script src="chocie_manager.js"></script>
+
+    
+
 </head>
 
 <body>
@@ -380,7 +394,7 @@
 
                     <input type="button" value="+" onclick="javascript:add();">
                 </form>
-                
+
 
                 <tbody id="order_list">
                     <tr>
@@ -395,7 +409,7 @@
                 <a href="javascript:payWindow();">
                     <input type="submit" id="pay" value="결제">
                 </a>
-                
+
                 <a href="../Serverway/main.html">
                     <input type="button" id="return" value="되돌아가기">
                 </a>
@@ -599,6 +613,7 @@
         </div>
         <!--메뉴 종료-->
     </div>
+
     <div class="orderlist_main_wrap">
         <div id="order_body">
             <br>
@@ -615,15 +630,6 @@
                 <h4 id="option">허니오트</h4>
                 <h4 id="option">허니오트</h4>
                 <h3 id="sandwich">샌드위치 2</h3>
-                <h4 id="option">허니오트</h4>
-                <h4 id="option">허니오트</h4>
-                <h4 id="option">허니오트</h4>
-                <h4 id="option">허니오트</h4>
-                <h4 id="option">허니오트</h4>
-                <h4 id="option">허니오트</h4>
-                <h3 id="sandwich">샌드위치 3</h3>
-                <h4 id="option">허니오트</h4>
-                <h4 id="option">허니오트</h4>
                 <h4 id="option">허니오트</h4>
                 <h4 id="option">허니오트</h4>
                 <h4 id="option">허니오트</h4>
@@ -650,18 +656,43 @@
                 <button id="order_btn" onClick="location.href='main.html'"> 결제 취소</button>
 
                 <!-- 결제 진행 창 이동 -->
-                <button class="btn btn-default" id="popbutton">카드 결제</button><br />
-                <div class="modal fade">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                        </div>
-                    </div>
-                </div>
+                <a href="javascript:payingWindow()">
+                    <button id="order_btn">카드 결제</button>
+                </a>
 
             </div>
         </div>
 
+        <div class="payment_main_wrap">
 
+            <div id="edit_div">
+                <div id="banner_header">
+                    <div id="banner_sub">
+                        <img src="banner.png" name="배너">
+                    </div>
+
+                    <div id="card">
+                        <img src="card.PNG" height="300">
+                        <div class="spinner-grow text-success" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                        <h3>카드를 넣어주세요</h3>
+                    </div>
+
+                    <div>
+                        <div id="btna">
+                        </div>
+                        <!--홈화면으로 이동-->
+
+                        <a href="main.html"><input type="button" name="cancle" value="결제취소"></a>
+                        <!--번호표로 창 띄워야 함-->
+                        <a href="number.html"><input type="button" name="card" value="카드 결제"></a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
 
         <!--버튼-->
@@ -672,7 +703,7 @@
 
     </div>
 
-   
+
 
 
 
