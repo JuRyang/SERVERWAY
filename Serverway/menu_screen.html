@@ -298,9 +298,28 @@
         
         <!--푸터 시작-->
         <div class="footer">
-            <div class="order_list">
-            
-            </div>
+            <table class="table">
+                <form name="form" class="footer_form" method="get">
+                    <input type="hidden" name="sell_price">
+
+                    <button type="button" onclick="javascript:del();">-</button>
+
+
+                    <input type="text" name="amount" class="number1" value="1" onchange="javascript:change();" readonly>
+
+                    <input type="button" value="+" onclick="javascript:add();">
+
+                    <!--<input type="text" name="sum" class="menu_txt1" readonly>
+                    <input type="text" name="sum" class="menu_price1" readonly>-->
+                </form>
+                
+                <tbody id="order_list">
+                    <tr>
+                        <th>제품명</th>
+                        <th>가격</th>
+                    </tr>
+                </tbody>
+            </table>
             
             <div class="button">
                 <input type="submit" id="pay" value="결제">

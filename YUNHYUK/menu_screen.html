@@ -6,7 +6,58 @@
     <title>Serverway Menu Screen</title>
     
     <link rel="stylesheet" href="menu_screen.css">
-    <script src="menu_screen.js"></script>
+    
+    <script>
+        /*장바구니*/
+        
+        //샌드위치 메뉴 배열
+        var sand_menu=[{name:'에그마요', price:4300}, 
+                       {name:'이탈리안 비엠티', price:5200},
+                       {name:'비엘티', price:5200},
+                       {name:'미트볼', price:5200},
+                       {name:'로스트 치킨', price:5900},
+                       {name:'터키', price:5200},
+                       {name:'스테이크 & 치즈', price:6500},
+                       {name:'치킨 데리야끼', price:5700},
+                       {name:'베지', price:3900}
+        ];
+    
+        //랩 메뉴 배열
+        var wrap_menu=[{name:'햄,에그 & 치즈 랩', price:2900}, 
+                       {name:'웨스턴,에그 & 치즈 랩', price:2900}, 
+                       {name:'베이컨,에그 & 치즈 랩', price:2900}, 
+                       {name:'스테이크,에그 & 치즈 랩', price:5700}, 
+                       {name:'이탈리안 미니 랩', price:3400}, 
+                       {name:'스테이크 & 치즈 아보카도 랩', price:5700}, 
+                       {name:'쉬림프 에그마요 랩', price:5000}, 
+                       {name:'치킨 베이컨 미니 랩', price:2900}
+        ];
+        
+        //샐러드 메뉴 배열
+        var salad_menu=[{name:'에그마요', price:6000}, 
+                        {name:'이탈리안 비엠티', price:6900}, 
+                        {name:'비엘티', price:6900}, 
+                        {name:'미트볼', price:6900}, 
+                        {name:'로스트 치킨', price:7600}, 
+                        {name:'터키', price:6900}, 
+                        {name:'스테이크 & 치즈', price:8200}, 
+                        {name:'치킨 데리야끼', price:6900}, 
+                        {name:'베지', price:5600}
+        ];
+        
+        //기타 메뉴 배열
+        var etc_menu1=[{name:'치지 갈릭 브레드', price:2900}, 
+                       {name:'머쉬룸 수프', price:2900}, 
+                       {name:'이탈리안 플랫 피자', price:3200}, 
+                       {name:'치즈 플랫 피자', price:2700}, 
+                       {name:'Cheesy 웨지 포테이토', price:2000}, 
+                       {name:'브로콜리 체다 수프', price:2900}, 
+                       {name:'베이크 포테이토 수프', price:2900}, 
+                       {name:'해쉬브라운', price:1200}
+        ];
+        
+        function 
+    </script>
 </head>
 
 <body>
@@ -37,8 +88,6 @@
             
             <div class="sand_img">
                 <ul>
-
-                    <a href="javascript:popup()">
                     <a href="#" onclick="" data-price="4300">
                         <li><img src="../YUNHYUK/images/sand/Eggmayo.jpg"></li>
                         <li class="sand_text">에그마요</li>
@@ -287,16 +336,28 @@
         
         <!--푸터 시작-->
         <div class="footer">
-            <div class="order_list">
-                    <input type="button" value="-" onclick="del();">
-                    <input type="text" value="1" onchange="change" readonly>
-                    <input type="button" value="+" onclick="add();">
-                </div>
+            <!--<table class="table">
+                <form name="form" class="footer_form" method="get">
+                    <input type="hidden" name="sell_price">
+
+                    <button type="button" onclick="javascript:del();">-</button>
+
+
+                    <input type="text" name="amount" class="number1" value="1" onchange="javascript:change();" readonly>
+
+                    <input type="button" value="+" onclick="javascript:add();">
+
+                    <input type="text" name="sum" class="menu_txt1" readonly>
+                    <input type="text" name="sum" class="menu_price1" readonly>
+                </form>
                 
-                <div>
-                    <input type="text" name="quantity" readonly>
-                </div>
-            </div>
+                <tbody id="order_list">
+                    <tr>
+                        <th>제품명</th>
+                        <th>가격</th>
+                    </tr>
+                </tbody>
+            </table>-->
             
             <div class="button">
                 <input type="submit" id="pay" value="결제">
