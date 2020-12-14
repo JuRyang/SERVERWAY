@@ -2,7 +2,7 @@
 var arrTabList = ['sand', 'wrap', 'salad', 'etc'];
 
 // 음식 목록 
-// 0 : 샐러드, 1:랩, 2:샐러드, 3:기타
+// 0 : 샌드위치, 1:랩, 2:샐러드, 3:기타
 var itemList =
     [
         '[{"index" : "1", "src" : "menu/sand/1.jpg", "name" : "BLT", "price" : "7,500원"},{"index" : "2", "src" : "menu/sand/2.jpg", "name" : "치킨데리야끼", "price" : "6,500원"},{"index" : "3", "src" : "menu/sand/3.jpg", "name" : "에그마요", "price" : "5,400원"},{"index" : "4", "src" : "menu/sand/4.jpg", "name" : "이탈리안BMT", "price" : "8,500원"},{"index" : "5", "src" : "menu/sand/5.jpg", "name" : "미트볼", "price" : "8800"},{"index" : "6", "src" : "menu/sand/6.jpg", "name" : "로스트치킨", "price" : "6,300원"}, {"index" : "7", "src" : "menu/sand/7.jpg", "name" : "스테이크&치즈", "price" : "8,600원"},{"index" : "8", "src" : "menu/sand/8.jpg", "name" : "터키", "price" : "6,900원"},{"index" : "9", "src" : "menu/sand/9.jpg", "name" : "베지터리언", "price" : "4,500원"}]'
