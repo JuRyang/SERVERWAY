@@ -45,7 +45,7 @@ div.choice_main_wrap {
     padding: 50px;
     
     position:absolute;
-    display: none;
+    /*display: none;*/
     
     top:50px;
     left:470px;
