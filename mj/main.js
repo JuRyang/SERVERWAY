@@ -1,3 +1,70 @@
+window.onload = function () {
+    // 메뉴 불러오기
+    getItem();
+    
+
+    
+    
+
+}
+
+/* 메뉴 불러오기 메서드 */
+function getItem() {
+
+    for (var i = 0; i < arrTabList.length; i++) {
+
+        var menudata = JSON.parse(itemList[i]);
+        var menuHtml = "";
+
+        for (var j = 0; j < menudata.length; j++) {
+            menuHtml += '<div class="menu" onclick = "javascript:addmenuOpen(' + i + ', ' + j + ');">';
+                menuHtml += '<table>';
+            menuHtml += '<tr>';
+            menuHtml += '<td><img src="'
+            menuHtml += menudata[j].src;
+            menuHtml += '" width=250px height=250px></td></tr>'
+            menuHtml += '<tr><td><a1>'
+            menuHtml += menudata[j].name;
+            menuHtml += '</a1></td></tr>'
+            menuHtml += '<tr><td><a2>'
+            menuHtml += menudata[j].price;
+            menuHtml += '</a2></td></tr></table></div>'
+
+            var div_sq = document.getElementById(arrTabList[i]);
+            console.log(div_sq);
+            div_sq.innerHTML = menuHtml;
+        };
+    };
+
+};
+
+// 메뉴탭 클릭시 메뉴목록 Display
+function menulist(tabNum) {
+    for (var i = 0; i < arrTabList.length; i++) {
+        if (i == tabNum) {
+            eval("document.querySelector('#" + arrTabList[i] + "').style.display = 'block';");
+        } else {
+            eval("document.querySelector('#" + arrTabList[i] + "').style.display = 'none';");
+        }
+    }
+};
+
+
+// [팝업창] 추가메뉴창 열기
+function addmenuOpen(tabNum, itemNum) {
+    document.querySelector('div.choice_main_wrap').style.display = 'block';
+
+
+    
+    
+    
+    
+}
+
+
+
+
+// 도경 수인파트
 var addlist = [];
 
 
@@ -122,4 +189,6 @@ function payWindow(){
     var payDiv=document.querySelector('div.orderlist_main_wrap');
     payDiv.style.display='block';
 }
+
+
 

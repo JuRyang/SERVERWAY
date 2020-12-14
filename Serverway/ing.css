@@ -56,3 +56,25 @@ h3, span,a{
     background-color: #ffca08;
 }
 
+div.payment_main_wrap {
+    width: 930px;
+
+    background-color: white;
+
+    margin: 280px auto;
+    margin-left: 150px;
+    
+    border: 1px solid #ddd;
+    border-radius: 80px;
+
+    box-shadow: 0px 0px 10px #aaa;
+
+    padding: 50px;
+    
+    position:absolute;
+    display: none;
+    
+    top:50px;
+    left:470px;
+
+}

@@ -1,10 +1,239 @@
+/* 색상
+#038c25
+#46a65e 
+
+#f2d194
+#f2f2f2
+#ee5200
+#eee
+#ffca08
+*/
+
+
 * {
+
     margin: 0;
     padding: 0;
-    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+  
     
 }
 
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: white;
+}
+button{
+        border: none;
+    outline:none;
+}
+
+/*main_wrap*/
+#main_wrap {
+    width: 1080px;
+    /*height: 800px;*/
+
+    background-color: #FFF;
+
+    margin: 20px auto;
+
+    border: 1px solid #DDD;
+    border-radius: 5px;
+
+    box-shadow: 3px 3px 5px #DDD;
+
+    padding: 10px;
+
+}
+
+ header {
+        margin: auto;
+        padding: 0px  100px  0px  60px  ;
+        margin: 10px 50px;
+
+    }
+
+
+    #logo {
+        
+      
+        float: right;
+        padding: 60px
+    }
+
+
+/*---------nav---------*/
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.menuselect > button {
+    width: 270px;
+    height: 95px;
+    background-color: #ffca08;
+    font-size: 35px;
+    margin: 0px;
+    border-radius: 30px 30px 0px 0px;
+    border: none;
+    outline:none;
+
+}
+
+.menuselect > button:nth-child(2) {
+    background-color: #ee5200;
+}
+
+.menuselect > button:nth-child(3) {
+    background-color: #46a65e;
+}
+
+.menuselect > button:nth-child(4) {
+    background-color: #eee;
+}
+
+/*--------메뉴리스트----------*/
+
+.menulist {
+    background-color: #ffca08;
+    margin-top: 20px;
+    width: 1080px;
+    height: 1000px;
+    overflow: scroll;
+
+}
+.menulist{
+    background-color: #ffca08;
+    margin-top: 0px;
+    width: 1080px;
+    height: 1000px;
+    overflow: scroll;
+
+}
+
+.menu {
+    width: 340px;
+    margin: 10px;
+    float: left;
+    cursor: pointer;
+}
+
+.menu img {
+    margin: 25px 45px 0px 45px;
+    border-radius: 30px;
+    background-color: white;
+}
+
+
+.menuselect table {
+    /*  width: 500px;
+    height: 50px;
+    margin-left: 40px;
+    margin-top: 50px;
+    padding: 30px;*/
+   
+}
+
+.menu a1 {
+    padding-left: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 24px;
+
+}
+
+.menu a2 {
+    /*  padding-left: 10px;*/
+    font-size: 20px;
+
+}
+
+/*배경색상*/
+
+
+#wrap {
+    display: none;
+    width: 1080pxpx;
+    height: 1080px;
+    background-color: #ee5200;
+}
+
+
+#salad {
+    display: none;
+    width: 1080pxpx;
+    height: 1080px;
+    background-color: #46a65e;
+}
+
+
+#etc {
+    display: none;
+
+    width: 1080pxpx;
+    height: 1080px;
+    background-color: #eee;
+}
+
+
+
+
+
+/*장바구니  class="cart" */
+.cart {
+   
+    width: 1080px;
+    height: 300px;
+}
+
+.cartlist {
+
+    width: 660px;
+    height: 300px;
+    float: left;
+}
+
+.mainpay {
+ 
+    width: 400px;
+    height: 400px;
+    float: right;
+    overflow: scroll;
+
+}
+
+h5 {
+    font-size: 100%;
+  
+}
+
+.mainbutton > button {
+    width: 250px;
+    height: 85px;
+    border-radius: 40px;
+    font-size: 30pt;
+    background-color: #46a65e;
+   
+    
+
+}
+
+.mainbutton > button:hover {
+    background-color: #ffca08;
+}
+
+.mainbutton > button:nth-child(1) {
+    margin: 60px 60px 40px 80px;
+
+
+}
+
+.mainbutton > button:nth-child(2) {
+    margin: 0px 60px 40px 80px;
+
+
+}
+<!--메뉴추가-->
 h4{
     text-align: left;
     margin: 25px 15px;
@@ -42,7 +271,7 @@ div.choice_main_wrap {
     padding: 50px;
     
     position:absolute;
-    /*display: none;*/
+    display: none;
     
     top:50px;
     left:470px;
