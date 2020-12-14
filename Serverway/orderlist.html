@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <title>serverway orderlist</title>
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="ing.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!--<script type="text/javascript">
+        $(function() {
+            $("#popbutton").click(function() {
+                $('div.modal').modal({
+                    remote: 'ing.html'
+                });
+            })
+        })
+    </script>-->
+
+    <script src="order.js"></script>
+
+</head>
+
+<body>
+
+    <div id="order_body">
+        <br>
+        <img src="img/logo.png">
+        <h1 id="order_h1">주문목록</h1>
+        <br>
+        <!-- 담은 샌드위치 및 옵션 불러와야함 -->
+        <div>
+            <h3 id="sandwich">샌드위치 1</h3>
+            <h4 id="listresult"></h4>
+            <h4 id="option">허니오트</h4>
+            <h4 id="option">아메리칸치즈</h4>
+            <h4 id="option">허니오트</h4>
+            <h4 id="option">허니오트</h4>
+            <h4 id="option">허니오트</h4>
+            <h4 id="option">허니오트</h4>
+            <h3 id="sandwich">샌드위치 2</h3>
+            <h4 id="option">허니오트</h4>
+            <h4 id="option">허니오트</h4>
+            <h4 id="option">허니오트</h4>
+            <h4 id="option">허니오트</h4>
+            <h4 id="option">허니오트</h4>
+            <h4 id="option">허니오트</h4>
+            <h3 id="sandwich">샌드위치 3</h3>
+            <h4 id="option">허니오트</h4>
+            <h4 id="option">허니오트</h4>
+            <h4 id="option">허니오트</h4>
+            <h4 id="option">허니오트</h4>
+            <h4 id="option">허니오트</h4>
+            <h4 id="option">허니오트</h4>
+            <h4 id="option">허니오트</h4>
+
+        </div>
+        <br><br><br>
+        <!-- 버튼 클릭 시 메뉴주문화면으로 이동 -->
+        <button type="button" id="btn_order" onClick="location.href='menu_screen.html'">더 담으러가기</button>
+        <br><br><br><br>
+        <hr id="order_hr">
+        <br><br>
+        <div>
+            <h4 id="cost">총 주문 금액</h4>
+            <h3 id="totalcost">
+                <!-- 총 주문 금액 불러와야함-->
+                원
+            </h3>
+
+        </div>
+        <div>
+
+            <!-- 메인화면 이동 -->
+            <button id="order_btn" onClick="location.href='main.html'"> 결제 취소</button>
+
+            <!-- 결제 진행 창 이동 -->
+            <!--<button class="btn btn-default" id="popbutton">카드 결제</button><br />-->
+            <a href="javascript:payingWindow()">
+                <button id="order_btn"> 결제 취소</button>
+            </a>
+
+        </div>
+    </div>
+
+    <div class="payment_main_wrap">
+
+        <div id="edit_div">
+            <div id="banner_header">
+                <div id="banner_sub">
+                    <img src="banner.png" name="배너">
+                </div>
+
+                <div id="card">
+                    <img src="card.PNG" height="300">
+                    <div class="spinner-grow text-success" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <h3>카드를 넣어주세요</h3>
+                </div>
+
+                <div>
+                    <div id="btna">
+                    </div>
+                    <!--홈화면으로 이동-->
+
+                    <a href="main.html"><input type="button" name="cancle" value="결제취소"></a>
+                    <!--번호표로 창 띄워야 함-->
+                    <a href="number.html" rel /><input type="button" id="popbutton1" class="btn btn-default" name="card" value="카드결제">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
