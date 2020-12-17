@@ -6,6 +6,7 @@
 }
 
 h4{
+    
     text-align: left;
     margin: 25px 15px;
     font-size: 30px;
@@ -27,6 +28,7 @@ p{
 
 /*main_wrap*/
 div.choice_main_wrap {
+    
     width: 930px;
     height: 1380px;
 
@@ -44,8 +46,8 @@ div.choice_main_wrap {
     position:absolute;
     /*display: none;*/
     
-    top:50px;
-    left:470px;
+    top:10%;
+    left:36.5%;
     
     
     
@@ -289,7 +291,7 @@ input[type=radio]{
 
 /*슬라이드 버튼 속성*/ 
 /*breadtype*/
-.breadtype{
+/*.breadtype{
     position: relative;
     
 }
@@ -334,10 +336,11 @@ input[type=radio]{
 .breadtype button.slick-next:before {
     font-family: 'xeicon';
     content: "\ea48";
-}
+}*/
 
 
 /*cheesetype*/
+/*
 .cheesetype{
     position: relative;
     
@@ -383,9 +386,11 @@ input[type=radio]{
     font-family: 'xeicon';
     content: "\ea48";
 }
+*/
 
 
 /*vegtype*/
+/*
 .vegtype{
     position: relative;
     
@@ -431,10 +436,11 @@ input[type=radio]{
     font-family: 'xeicon';
     content: "\ea48";
 }
+*/
 
 
 /*saucetype*/
-.saucetype{
+/*.saucetype{
     position: relative;
     
 }
@@ -479,9 +485,10 @@ input[type=radio]{
 .saucetype button.slick-next:before {
     font-family: 'xeicon';
     content: "\ea48";
-}
+}*/
 
 /*add type*/
+/*
 .addtype{
     position: relative;
     
@@ -526,6 +533,7 @@ input[type=radio]{
     font-family: 'xeicon';
     content: "\ea48";
 }
+*/
 
 
 
