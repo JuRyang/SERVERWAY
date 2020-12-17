@@ -4,6 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>serverway</title>
+    <!--12/08 12:40 수인 추가 슬라이드 버튼-->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <!--12/08 12:40 수인 추가 슬라이드 버튼 css-->
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!--jqeury library load-->
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <!--12/08 12:40 수인 추가 슬라이드 버튼 script-->
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
     <!--jQuery 라이브러리 로드-->
     <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
     <!--css 연결-->
@@ -206,10 +215,12 @@
                             <script type="text/javascript">
                                 $('.addtype').slick();
                             </script>
-
+                            
+                            
+                        <div class="choice_bottom">
                             <!--가격-->
                             <!--선택한 샌드위치 이름 들어갈 곳-->
-                            <h4>선택한 샌드위치 : 치킨데리야끼</h4>
+                            <h4>선택한 샌드위치<div id=""> </div></h4>
                             <div id="listresult"> </div>
                             <div id="totalprice">Total
                                 <h4 id="sumprice">0</h4>
@@ -222,9 +233,9 @@
                                 <input onclick="choiceWinClose()" type="button" value="취소" id="btn">
                                 <input onclick="value_check()" type="button" value="담기" id="btn">
                             </div>
-
                         </div>
                     </div>
+                </div>
 
 
                 </div>

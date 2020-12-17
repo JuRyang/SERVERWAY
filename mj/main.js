@@ -1,10 +1,6 @@
 window.onload = function () {
     // 메뉴 불러오기
     getItem();
-    
-
-    
-    
 
 }
 
@@ -52,19 +48,16 @@ function menulist(tabNum) {
 
 // [팝업창] 추가메뉴창 열기
 function addmenuOpen(tabNum, itemNum) {
-    document.querySelector('div.choice_main_wrap').style.display = 'block';
-
-
-    
-    
-    
-    
+    document.querySelector('div.choice_main_wrap').style.display = 'block'; 
 }
 
 
 
 
 // 도경 수인파트
+
+
+
 var addlist = [];
 
 
@@ -80,6 +73,8 @@ function value_check() {
     alert(addlist);
     /*$('#listresult').html(addlist);*/
 }
+
+
 
 //checked 여부 확인
 /*function validate_check() {
@@ -110,7 +105,7 @@ function getListValue() {
         document.querySelectorAll(query);
 
     // 선택된 목록에서 value 찾기
-    let result = '';
+    var result = '';
     selectedList.forEach((el) => {
         result += el.value + ' / ';
     });
@@ -123,6 +118,7 @@ function getList(event) {
     document.getElementById('result').innerText =
         event.target.value;
 }
+
 
 
 // Radio checked 선택해제 가능하게 만들기
