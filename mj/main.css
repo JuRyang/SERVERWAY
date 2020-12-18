@@ -9,6 +9,8 @@
 #ffca08
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
 
 * {
 
@@ -211,9 +213,9 @@ h5 {
     width: 250px;
     height: 85px;
     border-radius: 40px;
-    font-size: 30pt;
+    font-size: 30px;
     background-color: #46a65e;
-   
+    color: white;
     
 
 }
@@ -236,13 +238,22 @@ h5 {
 
 
 
-<!--메뉴추가-->
+/*<!------------------메뉴추가------------------!>*/
 
 
-h4{
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+    
+}
+
+
+#greenText{
+    width: 870px;
     text-align: left;
-    margin: 25px 15px;
-    font-size: 30px;
+    margin: 20px 15px;
+    font-size: 25px;
     color:#46a65e;
     font-weight: bold; 
     background-color: #f2f2f2;
@@ -251,22 +262,33 @@ h4{
 
 p{
     text-align: left;
-    margin: 0;
-    padding: 0;
-    font-size: 25px;
+    font-size: 20px;
     color: #46a65e;
     font-weight: bold;
     background-color: #f2f2f2;
 }
 
+#choice{
+    overflow: scroll;
+    height: 820px;
+    width:auto;
+    
+}
+
+#choice_option{
+    float: left;
+    width: 900px;
+    
+}
+
+
 /*main_wrap*/
 div.choice_main_wrap {
+    
     width: 930px;
     height: 1380px;
 
     background-color: #f2f2f2;
-
-    margin: 30px auto;
 
     border: 1px solid #ddd;
     border-radius: 80px;
@@ -278,21 +300,18 @@ div.choice_main_wrap {
     position:absolute;
     display: none;
     
-    top:50px;
-    left:470px;
+    margin: 20px -500px;
+    top: 100px;
+    left: 49.5%;
     
-    
-    
-    
+    /*top:8%;
+    left:34.5%;*/
 }
 
 
 
 /*header*/
-header {
-    margin: 30px 50px;
-    
-}
+
 
 header > h2 {
     float: left;
@@ -329,7 +348,7 @@ nav {
 
 /*메뉴*/
 #choice_wrap {
-    margin: 30px;
+    margin: 32px;
     background-color: #f2f2f2;
 }
 
@@ -438,6 +457,7 @@ footer{
 #choice ul li{
     width: 200px;
     float: left;
+    text-align: left;
     list-style: none;
     font-size: 24px;
     padding: 10px;
@@ -523,11 +543,10 @@ input[type=radio]{
 
 /*슬라이드 버튼 속성*/ 
 /*breadtype*/
-.breadtype{
+/*.breadtype{
     position: relative;
     
 }
-
 .breadtype button {
     position: absolute;
     z-index: 10px;
@@ -539,28 +558,21 @@ input[type=radio]{
     background-color: transparent;
     border: none;
 }
-
-
 .breadtype button:before{
     font-family: 'xeicon'; color: #ffca08; font-size: 40px;
 }
-
 .breadtype button:hover{
      cursor: pointer;
     background-color: #46a65e;
 }
-
 .breadtype button.slick-prev {
     font-size: 0; color: transparent;
     left: -80px;
 }
-
-
 .breadtype button.slick-prev:before {
     font-family: 'xeicon';
     content: "\ea47";
 }
-
 .breadtype button.slick-next {
     font-size: 0; color: transparent;
     right: -80px;
@@ -568,15 +580,15 @@ input[type=radio]{
 .breadtype button.slick-next:before {
     font-family: 'xeicon';
     content: "\ea48";
-}
+}*/
 
 
 /*cheesetype*/
+/*
 .cheesetype{
     position: relative;
     
 }
-
 .cheesetype button {
     position: absolute;
     z-index: 10;
@@ -588,43 +600,38 @@ input[type=radio]{
     background-color: transparent;
     border: none;
 }
-
 .cheesetype button:before{
     font-family: 'xeicon'; color: #ffca08; font-size: 40px;
 }
-
 .cheesetype button:hover{
     cursor: pointer;
     background-color: #46a65e;
 }
-
 .cheesetype button.slick-prev {
     font-size: 0; color: transparent;
     left: -80px;
 }
-
 .cheesetype button.slick-prev:before {
     font-family: 'xeicon';
     content: "\ea47";
 }
-
 .cheesetype button.slick-next {
     font-size: 0; color: transparent;
     right: -80px;
 }
-
 .cheesetype button.slick-next:before {
     font-family: 'xeicon';
     content: "\ea48";
 }
+*/
 
 
 /*vegtype*/
+/*
 .vegtype{
     position: relative;
     
 }
-
 .vegtype button {
     position: absolute;
     z-index: 10;
@@ -636,43 +643,37 @@ input[type=radio]{
     background-color: transparent;
     border: none;
 }
-
 .vegtype button:before{
     font-family: 'xeicon'; color: #ffca08; font-size: 40px;
 }
-
 .vegtype button:hover{
      cursor: pointer;
     background-color: #46a65e;
 }
-
 .vegtype button.slick-prev {
     font-size: 0; color: transparent;
     left: -80px;
 }
-
 .vegtype button.slick-prev:before {
     font-family: 'xeicon';
     content: "\ea47";
 }
-
 .vegtype button.slick-next {
     font-size: 0; color: transparent;
     right: -80px;
 }
-
 .vegtype button.slick-next:before {
     font-family: 'xeicon';
     content: "\ea48";
 }
+*/
 
 
 /*saucetype*/
-.saucetype{
+/*.saucetype{
     position: relative;
     
 }
-
 .saucetype button {
     position: absolute;
     z-index: 10;
@@ -684,43 +685,36 @@ input[type=radio]{
     background-color: transparent;
     border: none;
 }
-
 .saucetype button:before{
     font-family: 'xeicon'; color: #ffca08; font-size: 40px;
 }
-
 .saucetype button:hover{
      cursor: pointer;
     background-color: #46a65e;
 }
-
-
 .saucetype button.slick-prev {
     font-size: 0; color: transparent;
     left: -80px;
 }
-
 .saucetype button.slick-prev:before {
     font-family: 'xeicon';
     content: "\ea47";
 }
-
 .saucetype button.slick-next {
     font-size: 0; color: transparent;
     right: -80px;
 }
-
 .saucetype button.slick-next:before {
     font-family: 'xeicon';
     content: "\ea48";
-}
+}*/
 
 /*add type*/
+/*
 .addtype{
     position: relative;
     
 }
-
 .addtype button {
     position: absolute;
     z-index: 10;
@@ -732,7 +726,6 @@ input[type=radio]{
     background-color: transparent;
     border: none;
 }
-
 .addtype button:before{
     font-family: 'xeicon'; color: #ffca08; font-size: 40px;
 }
@@ -740,26 +733,23 @@ input[type=radio]{
      cursor: pointer;
     background-color: #46a65e;
 }
-
 .addtype button.slick-prev {
     font-size: 0; color: transparent;
     left: -80px;
 }
-
 .addtype button.slick-prev:before {
     font-family: 'xeicon';
     content: "\ea47";
 }
-
 .addtype button.slick-next {
     font-size: 0; color: transparent;
     right: -80px;
 }
-
 .addtype button.slick-next:before {
     font-family: 'xeicon';
     content: "\ea48";
 }
+*/
 
 
 
@@ -794,11 +784,10 @@ div.msg{
 
 
 
-
 div.choice_bottom{
     width:850px;
     margin: 0px;
-    padding: 50px;
+    padding: 40px;
     position: absolute;
     text-align: center;
     bottom: 50px;
@@ -835,6 +824,156 @@ div.choice_bottom{
     
 }
 
+
+/*-----------------order.css-----------------*/
+
+#order_body {
+    padding: 20px;
+    margin: 20px auto;
+    width: 930px;
+    border-radius: 50px;
+    background-color: white;
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+    box-shadow: 0px 0px 10px #aaa;
+}
+
+#order_h1 {
+    font-size: 35pt;
+}
+
+#sandwich {
+    background-color: white;
+    text-align: left;
+    text-indent: 4em;
+    color: #46a65e;
+    font-size: 30pt;
+
+
+}
+
+#option {
+    line-height: 60px;
+    text-align: left;
+    text-indent: 8em;
+    font-size: 24pt;
+}
+
+#order_hr {
+    border: 0;
+    width: 80%;
+    height: 3px;
+    margin-left: 100px;
+    background: #ccc;
+}
+
+#cost {
+    background-color: white;
+    font-size: 24pt;
+}
+
+#totalcost {
+    background-color: white;
+    color: #46a65e;
+    font-size: 24pt;
+}
+
+#order_btn,
+#popbutton {
+    font-size: 25px;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin: 20px 70px auto;
+    width: 250px;
+    height: 85px;
+    border: 0;
+    border-radius: 90px;
+    background: #46a65e;
+    color: white;
+
+}
+
+#order_btn:hover, #popbutton:hover {
+    cursor: pointer;
+    background-color: #ffca08;
+}
+
+
+#btn_order {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 25px;
+    width: 250px;
+    height: 85px;
+    border: 0;
+    border-radius: 90px;
+    background: #ffca08;
+    color: white;
+}
+
+#btn_order:hover {
+    cursor: pointer;
+    background-color: #46a65e;
+}
+
+
+/*도경추가*/
+div.orderlist_main_wrap {
+    position:absolute;
+    display: none;
+    
+    margin: 20px -500px;
+    top:50px;
+    left: 50%;
+}
+
+
+/*------------------payment.css-----------------*/
+
+
+#edit_div{
+    margin: auto;
+    border-radius:20px;
+    box-shadow: 0px 0px 5px white;
+    width: 930px;
+    height: 1380px;
+    
+}
+
+#banner_header{
+    margin:280px 120px 300px;
+    clear: left;
+    float: left;
+    text-align: center;
+}
+
+#card{
+    text-align: center;
+    
+}
+
+#table{
+    text-align: center;
+    
+}
+
+#btn_pay{
+    font-size: 20pt;
+    width:250px;
+    height:85px;
+    border:0;
+    border-radius: 90px;
+    background: #46a65e;
+    color:white;
+    margin: 300px 30px 20px;
+}
+
+div.payment_main_wrap {
+    position:absolute;
+    display: none;
+    
+    margin: 20px -500px;
+    top:50px;
+    left: 50%;
+}
 
 
 

@@ -4,14 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>serverway</title>
-    <!--12/08 12:40 수인 추가 슬라이드 버튼-->
-    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <!--12/08 12:40 수인 추가 슬라이드 버튼 css-->
-    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-    <!--jqeury library load-->
-    <script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <!--12/08 12:40 수인 추가 슬라이드 버튼 script-->
-    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     
     <!--jQuery 라이브러리 로드-->
     <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
@@ -20,6 +12,18 @@
     <!--js 연결-->
     <script src="main.js"></script>
     <script src="data.js"></script>
+    
+        <!--한경주량 script파일들-->
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js">
+    </script>
+
+    <!-- 결제진행중 화면 주량한경-->
+    <link rel="stylesheet" href="ing.css">
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 
 </head>
 
@@ -70,9 +74,8 @@
                     </div>
 
                     <div class="mainbutton">
-
-                        <button>결제</button>
-                        <button>되돌아가기</button>
+                        <button onclick="javascript:payWindow();">결제</button>
+                        <button onClick="location.href='home.html'">되돌아가기</button>
                     </div>
 
 
@@ -96,9 +99,9 @@
                     <!--재료 선택 화면 시작-->
                     <div id="choice_wrap">
                         <div id="choice">
-
-                            <h4>빵</h4>
-                            <section class="breadtype">
+                            <div id="choice_option">
+                            <h4 id=greenText>빵</h4>
+                            <section class="breadtype" >
                                 <ul>
                                     <li><label><input type="radio" name="bread" value="빵 선택안함" onclick='getListValue()' id="nonebread" checked> 샐러드변경</label></li>
                                     <li><label><input type="radio" name="bread" value="위트" onclick='getListValue()'> 위트</label></li>
@@ -110,10 +113,11 @@
                                     <li><label><input type="radio" name="bread" value="플랫" onclick='getListValue()'> 플랫</label></li>
                                 </ul>
                             </section>
+                            </div>
 
-
-                            <h4>치즈</h4>
-                            <section class="cheesetype">
+                            <div id="choice_option">
+                            <h4 id=greenText>치즈</h4>
+                            <section class="cheesetype" >
                                 <ul>
                                     <li><label><input type="radio" name="cheese" value="치즈 선택안함" onclick='getListValue()' id="nonecheese" checked> 치즈 선택안함</label></li>
                                     <li><label><input type="radio" name="cheese" value="아메리칸" onclick='getListValue()'> 아메리칸 치즈</label></li>
@@ -124,13 +128,14 @@
                                     <li><label><input type="radio" name="cheese" value="모차렐라" onclick='getListValue()'> 모차렐라</label></li>
                                 </ul>
                             </section>
-
-                            <br>
-                            <h4>야채(안드시는 야채를 선택해주세요.)<p># 취소를 원하시면 한번 더 클릭해주세요.
+                            </div>
+                            
+                            <div id="choice_option">
+                            <h4 id=greenText>야채(안드시는 야채를 선택해주세요.)<p># 취소를 원하시면 한번 더 클릭해주세요.
                                 <p>
                             </h4>
 
-                            <section class="vegtype">
+                            <section class="vegtype" >
                                 <ul>
                                     <li><label><input type="radio" name="everyveg" value="모든 야채 넣기" onclick='getListValue()' id="allveg" checked> 모든 야채 넣기</label></li>
                                     <li><label><input type="radio" name="nonevege" value="모든야채빼기" onclick='getListValue()'> 모든 야채 빼기</label></li>
@@ -152,12 +157,11 @@
                                     <li><label><input type="radio" name="jalapeno" value="할라피뇨" onclick='getListValue()'> 할라피뇨</label></li>
                                 </ul>
                             </section>
-
-                            <br>
-                            <h4>소스<p># 취소를 원하시면 한번 더 클릭해주세요.
-                                <p>
-                            </h4>
-                            <section class="saucetype">
+                            </div>
+                            
+                            <div id="choice_option">
+                            <h4 id=greenText>소스<p># 취소를 원하시면 한번 더 클릭해주세요.<p></h4>
+                            <section class="saucetype" >
                                 <ul>
                                     <li><label><input type="radio" name="sauce0" value="추천소스" onclick='getListValue()' id="sauce" checked>추천 소스</label></li>
                                     <li><label><input type="radio" name="sweetonion" value="스윗어니언 소스" onclick='getListValue()'> 스윗어니언</label></li>
@@ -180,12 +184,13 @@
                                     <li><label><input type="radio" name="blackpepper" value="후추" onclick='getListValue()'> 후추</label></li>
                                 </ul>
                             </section>
+                            </div>
 
-                            <br>
-                            <h4>추가<p># 취소를 원하시면 한번 더 클릭해주세요.
+                            <div id="choice_option">
+                            <h4 id=greenText>추가<p># 취소를 원하시면 한번 더 클릭해주세요.
                                 <p>
                             </h4>
-                            <section class="addtype">
+                            <section class="addtype" >
                                 <ul>
                                     <li><label><input type="radio" class="radio5" name="add0" value="추가선택안함" data-price="0" onclick='getListValue()' id="none" checked>추가 선택 안함</label></li>
                                     <li><label><input type="radio" class="radio5" name="eggmayo" value="에그마요" data-price="2000" onclick='getListValue()'> 에그마요</label></li>
@@ -198,9 +203,11 @@
                                     <li><label><input type="radio" class="radio5" name="omelet" value="오믈렛" data-price="2500" onclick='getListValue()'> 오믈렛</label></li>
                                 </ul>
                             </section>
+                            </div>
+                        </div>
 
                             <!--12/08 수인 slick 기능 추가-->
-                            <script type="text/javascript">
+                            <!--<script type="text/javascript">
                                 $('.breadtype').slick();
                             </script>
                             <script type="text/javascript">
@@ -214,13 +221,13 @@
                             </script>
                             <script type="text/javascript">
                                 $('.addtype').slick();
-                            </script>
+                            </script>-->
                             
                             
                         <div class="choice_bottom">
                             <!--가격-->
                             <!--선택한 샌드위치 이름 들어갈 곳-->
-                            <h4>선택한 샌드위치<div id=""> </div></h4>
+                            <h2 id>선택한 샌드위치<div id=""> </div></h2>
                             <div id="listresult"> </div>
                             <div id="totalprice">Total
                                 <h4 id="sumprice">0</h4>
@@ -234,7 +241,7 @@
                                 <input onclick="value_check()" type="button" value="담기" id="btn">
                             </div>
                         </div>
-                    </div>
+                    
                 </div>
 
 
@@ -248,14 +255,92 @@
                     $("#none").prop("checked", true);
                 </script>
 
-
-
-
-
-
                 <!--재료 선택 화면 끝-->
+                
+                
+                </div>
 
+            <div class="orderlist_main_wrap">
+                <div id="order_body">
+                    <br>
+                    <img src="img/logo.png">
+                    <h1 id="order_h1">주문목록</h1>
+                    <br>
+                    <!-- 담은 샌드위치 및 옵션 불러와야함 -->
+                    <div>
+                        <h3 id="sandwich">샌드위치 1</h3>
+                        <h4 id="option">허니오트</h4>
+                        <h4 id="option">아메리칸치즈</h4>
+                        <h4 id="option">허니오트</h4>
+                        <h4 id="option">허니오트</h4>
+                        <h4 id="option">허니오트</h4>
+                        <h4 id="option">허니오트</h4>
+                        <h3 id="sandwich">샌드위치 2</h3>
+                        <h4 id="option">허니오트</h4>
+                        <h4 id="option">허니오트</h4>
+                        <h4 id="option">허니오트</h4>
+                        <h4 id="option">허니오트</h4>
+                        <h4 id="option">허니오트</h4>
+                    </div>
+                    <br><br><br>
+                    <!-- 버튼 클릭 시 메뉴주문화면으로 이동 -->
+                    <button id="btn_order" onClick="payWinClose();">더 담으러가기</button>
+                    <br><br><br><br>
+                    <hr id="order_hr">
+                    <br><br>
+                    <div>
+                        <h4 id="cost">총 주문 금액</h4>
+                        <h3 id="totalcost">
+                            <!-- 총 주문 금액 불러와야함-->
+                            원
+                        </h3>
 
+                    </div>
+                    <div>
+
+                        <!-- 메인화면 이동 -->
+                        <button id="order_btn" onClick="location.href='home.html'"> 결제 취소</button>
+
+                        <!-- 결제 진행 창 이동 -->
+                        <a href="javascript:payingWindow()">
+                            <button id="order_btn">카드 결제</button>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="payment_main_wrap">
+
+                    <div id="edit_div">
+                        <div id="banner_header">
+                            <div id="banner_sub">
+                                <img src="banner.png" name="배너">
+                            </div>
+
+                            <div id="card">
+                                <img src="card.PNG" height="300">
+                                <div class="spinner-grow text-success" role="status">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                                <h3>카드를 넣어주세요</h3>
+                            </div>
+
+                            <div>
+                                <div id="btna">
+                                </div>
+                                
+                                <!--주문목록으로 이동-->
+
+                                <input type="button" name="cancle" id="btn_pay" value="결제취소" onclick="payingWinClose()">
+
+                                <!--번호표로 창 띄워야 함-->
+                                <a href="number.html"><input type="button" name="card"  id="btn_pay"value="카드 결제"></a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
 
 
             </div>

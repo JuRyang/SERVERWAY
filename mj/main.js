@@ -52,6 +52,11 @@ function addmenuOpen(tabNum, itemNum) {
 }
 
 
+// dk_a tag 클릭시
+
+
+
+
 
 
 // 도경 수인파트
@@ -184,6 +189,13 @@ function choiceWindow(){
 function payWindow(){
     var payDiv=document.querySelector('div.orderlist_main_wrap');
     payDiv.style.display='block';
+}
+
+
+// 결제창 닫기
+function payWinClose(){
+    var payDiv=document.querySelector('div.orderlist_main_wrap');
+    payDiv.style.display='none';
 }
 
 
