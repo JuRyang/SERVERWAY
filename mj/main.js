@@ -182,6 +182,7 @@ function choiceWindow(){
     
     var choiceDiv = document.querySelector('div.choice_main_wrap');
     choiceDiv.style.display = 'block';
+    scrollbar=1;
     
 }
 
