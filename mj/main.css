@@ -926,26 +926,30 @@ div.orderlist_main_wrap {
 }
 
 
+
 /*------------------payment.css-----------------*/
-
-
-#edit_div{
-    margin: auto;
-    border-radius:20px;
-    box-shadow: 0px 0px 5px white;
+#pay_edit_div {
+    padding: 20px;
+    margin:14px 0px 00px -570px;
     width: 930px;
-    height: 1380px;
-    
+    height: 1500px;
+    border-radius: 50px;
+    background-color: white;
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+    box-shadow: 0px 0px 10px #aaa;
 }
 
-#banner_header{
-    margin:280px 120px 300px;
+
+#banner_sub{
+    margin:200px 120px 30px;
     clear: left;
     float: left;
     text-align: center;
 }
 
 #card{
+    margin: 200px 120px; 400px;
     text-align: center;
     
 }
@@ -964,16 +968,78 @@ div.orderlist_main_wrap {
     background: #46a65e;
     color:white;
     margin: 300px 30px 20px;
+   
 }
+
+#btn_pay:hover{
+    cursor: pointer;
+    background-color: #46a65e;
+}
+
+
 
 div.payment_main_wrap {
     position:absolute;
     display: none;
-    
-    margin: 20px -500px;
+    margin: 20px 70px auto;
     top:50px;
     left: 50%;
 }
 
+/*---------------------------number--------------------------*/
+
+div.number_main_wrap {
+    position:absolute;
+    display: none;
+    margin: 20px 70px auto;
+    top:50px;
+    left: 50%;
+}
+
+#numform{
+    margin: 150px 0px;
+}
+
+#Numfont1{
+    font-size: 40px;
+}
+
+#Numfont2{
+    font-size: 24px;
+}
+
+#Numfont3{
+    margin: 10px;
+}
+font{
+    font-size: 150px;
+}
+#date{
+    font-size: 24px;
+    text-align: match-parent;
+    margin: 20px 0px;
+    font-size: 30px;
+}
+
+#wait{
+    font-size: 40px;
+    text-align: center;
+    margin: 350px 0px 0px -440px;
+    width: 750px;
+    height: 1000px;
+    border:1px
+    solid #aaa;
+    border-radius:20px;
+    box-shadow: 0px 0px 5px #aaa;
+    background-color: #46a65e;
+          
+}
+#count{
+    margin: 50px;
+}
+
+#wait_table{
+    margin: 300px;
+}
 
 
