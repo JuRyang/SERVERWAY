@@ -14,7 +14,7 @@ function getItem() {
 
         for (var j = 0; j < menudata.length; j++) {
             menuHtml += '<div class="menu" onclick = "javascript:addmenuOpen(' + i + ', ' + j + ');">';
-                menuHtml += '<table>';
+            menuHtml += '<table>';
             menuHtml += '<tr>';
             menuHtml += '<td><img src="'
             menuHtml += menudata[j].src;
@@ -50,12 +50,6 @@ function menulist(tabNum) {
 function addmenuOpen(tabNum, itemNum) {
     document.querySelector('div.choice_main_wrap').style.display = 'block'; 
 }
-
-
-// dk_a tag 클릭시
-
-
-
 
 
 
