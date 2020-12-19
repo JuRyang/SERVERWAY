@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serverway Menu Screen</title>
+
+
+    <link rel="stylesheet" href="menu_screen.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <!--<script src="chocie_manager.js"></script>-->
+
+    <!--한경주량 script파일들-->
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js">
+    </script>
+    
+    <!-- 결제진행중 화면 주량한경-->
+    <link rel="stylesheet" href="ing.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <script>
+        function payingWindow() {
+            var payingDiv = document.querySelector('div.payment_main_wrap');
+            payingDiv.style.display = 'block';
+        }
+    </script>
+
+    <!--한경주량 script파일들-->
+
+
+    <script src="chocie_manager.js"></script>
+
+
+    <!--수인도경 script파일들-->
+    <!--12/08 12:40 수인 추가 슬라이드 버튼-->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <!--12/08 12:40 수인 추가 슬라이드 버튼 css-->
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!--jqeury library load-->
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <!---->
+
+    <!--12/08 12:40 수인 추가 슬라이드 버튼 script-->
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!--css 연결-->
+    <link rel="stylesheet" href="choice_default.css">
+    <!--폰트-->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <!--js-->
+    <!--수인도경 script파일들 끝-->
+
+
+    <script type="text/javascript">
+        $(function() {
+            $("#popbutton").click(function() {
+                $('div.modal').modal({
+                    remote: 'payment.html'
+                });
+            })
+        })
+    </script>
+
+
+
+
+    <script type="text/javascript">
+        $(function() {
+            $(".choiceWin").click(function() {
+                $('div.modal').modal({
+                    remote: 'choice.html'
+                });
+            })
+        });
+    </script>
+
+    <!-- <script type="text/javascript">
+        $(function() {
+            $("#choiceWin").click(function() {
+                $('div.modal').modal({
+                    remote: 'choice.html'
+                });
+            })
+        });
+    </script>-->
+
+
+    <link rel="stylesheet" href="menu_screen.css">
+    <!--12/08 12:40 수인 추가 슬라이드 버튼-->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <!--12/08 12:40 수인 추가 슬라이드 버튼 css-->
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!--jqeury library load-->
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <!--12/08 12:40 수인 추가 슬라이드 버튼 script-->
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!--css 연결-->
+    <link rel="stylesheet" href="choice_default.css">
+    <!--폰트-->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <!--js-->
+    <script src="chocie_manager.js"></script>
+    
+    <script>
+    /*위시리스트 수량 버튼*/
+    function fn_count(type, select_menu){
+        var $input=$(select_menu).parent("td").find("input[name='menu_count']");
+        var count=Number($input.val());
+
+        if(type=='plus'){
+            $input.val(Number(count)+1);
+        }else{
+            if(count>1) $input.val(Number(count)-1);
+        }
+    }
+    </script>
+
+    
+
+</head>
+
+<body>
+    <div class="menu_screen">
+        <!--헤더 시작-->
+        <div class="header">
+            <img src="../YUNHYUK/images/serverway_logo.png">
+        </div>
+        <!--헤더 종료-->
+
+        <!--타이틀 시작-->
+        <h2 class="title">메뉴</h2>
+        <!--타이틀 종료-->
+
+        <!--메뉴 시작-->
+        <div class="menu">
+            <input type="radio" name="kategorie" id="sand" checked>
+            <label for="sand" class="menu_sand">샌드위치</label>
+
+            <input type="radio" name="kategorie" id="wrap">
+            <label for="wrap" class="menu_wrap">랩</label>
+
+            <input type="radio" name="kategorie" id="salad">
+            <label for="salad" class="menu_salad">샐러드</label>
+
+            <input type="radio" name="kategorie" id="etc">
+            <label for="etc" class="menu_etc">기타</label>
+
+            <div class="sand_img">
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/sand/Eggmayo.jpg"></li>
+                        <li class="sand_text">에그마요</li>
+                    </a>
+                </ul>
+
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/sand/ItalianBMT.jpg"></li>
+                        <li class="sand_text">이탈리안 비엠티</li>
+                    </a>
+                </ul>
+
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/sand/BLT.jpg"></li>
+                        <li class="sand_text">비엘티</li>
+                    </a>
+                </ul>
+
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/sand/Meatball.jpg"></li>
+                        <li class="sand_text">미트볼</li>
+                    </a>
+                </ul>
+
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/sand/Roastedchicken.jpg"></li>
+                        <li class="sand_text">로스트 치킨</li>
+                    </a>
+                </ul>
+
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/sand/Turkey.jpg"></li>
+                        <li class="sand_text">터키</li>
+                    </a>
+                </ul>
+
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/sand/Steakcheese.jpg"></li>
+                        <li class="sand_text">스테이크 &amp; 치즈</li>
+                    </a>
+                </ul>
+
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/sand/Chickenteriyaki.jpg"></li>
+                        <li class="sand_text">치킨 데리야끼</li>
+                    </a>
+                </ul>
+
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/sand/Veggiedelite.jpg"></li>
+                        <li class="sand_text">베지</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="wrap_img">
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/wrap/Hameggcheesewrap.png"></li>
+                        <li class="wrap_text">햄,에그 &amp; 치즈 랩</li>
+                    </a>
+                </ul>
+
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/wrap/Westerneggcheesewrap.png"></li>
+                        <li class="wrap_text">웨스턴,에그 &amp; 치즈 랩</li>
+                    </a>
+                </ul>
+
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/wrap/Bacon,eggcheesewrap.png"></li>
+                        <li class="wrap_text">베이컨,에그 &amp; 치즈 랩</li>
+                    </a>
+                </ul>
+
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/wrap/Steakeggcheesewrap.png"></li>
+                        <li class="wrap_text">스테이크,에그 &amp; 치즈 랩</li>
+                    </a>
+                </ul>
+
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/wrap/Italianminiwrap.jpg"></li>
+                        <li class="wrap_text">이탈리안 미니 랩</li>
+                    </a>
+                </ul>
+
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/wrap/Steakcheeseavocadowrap.jpg"></li>
+                        <li class="wrap_text">스테이크 &amp; 치즈 아보카도 랩</li>
+                    </a>
+                </ul>
+
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/wrap/Shrimpeggmayowrap.jpg"></li>
+                        <li class="wrap_text">쉬림프 에그마요 랩</li>
+                    </a>
+                </ul>
+
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/wrap/Chickenbaconminiwrap.jpg"></li>
+                        <li class="wrap_text">치킨 베이컨 미니 랩</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="salad_img">
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/salad/Eggmayo.jpg"></li>
+                        <li class="salad_text">에그마요</li>
+                    </a>
+                </ul>
+
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/salad/ItalianBMT.jpg"></li>
+                        <li class="salad_text">이탈리안 비엠티</li>
+                    </a>
+                </ul>
+
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/salad/BLT.jpg"></li>
+                        <li class="salad_text">비엘티</li>
+                    </a>
+                </ul>
+
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/salad/Meatball.jpg"></li>
+                        <li class="salad_text">미트볼</li>
+                    </a>
+                </ul>
+
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/salad/Roastedchicken.jpg"></li>
+                        <li class="salad_text">로스트 치킨</li>
+                    </a>
+                </ul>
+
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/salad/Turkey.jpg"></li>
+                        <li class="salad_text">터키</li>
+                    </a>
+                </ul>
+
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/salad/Steakcheese.jpg"></li>
+                        <li class="salad_text">스테이크 &amp; 치즈</li>
+                    </a>
+                </ul>
+
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/salad/Chickenteriyaki.jpg"></li>
+                        <li class="salad_text">치킨 데리야끼</li>
+                    </a>
+                </ul>
+
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/salad/Veggiedelite.jpg"></li>
+                        <li class="salad_text">베지</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="etc_img">
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/etc/Cheesygarlicbread.png"></li>
+                        <li class="etc_text">치지 갈릭 브레드</li>
+                    </a>
+                </ul>
+
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/etc/Mushroomsoup.png"></li>
+                        <li class="etc_text">머쉬룸 수프</li>
+                    </a>
+                </ul>
+
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/etc/Italianflatpizza.png"></li>
+                        <li class="etc_text">이탈리안 플랫 피자</li>
+                    </a>
+                </ul>
+
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/etc/Cheeseflatpizza.png"></li>
+                        <li class="etc_text">치즈 플랫 피자</li>
+                    </a>
+                </ul>
+
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/etc/Cheesyovenbakedwedgepotatoes.jpg"></li>
+                        <li class="etc_text">Cheesy 웨지 포테이토</li>
+                    </a>
+                </ul>
+
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/etc/Broccolicheddarsoup.jpg"></li>
+                        <li class="etc_text">브로콜리 체다 수프</li>
+                    </a>
+                </ul>
+
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/etc/Bakedpotatosoup.jpg"></li>
+                        <li class="etc_text">베이크 포테이토 수프</li>
+                    </a>
+                </ul>
+
+                <ul>
+                    <a href="javascript:choiceWindow()">
+                        <li><img src="../YUNHYUK/images/etc/Hashbrown.jpg"></li>
+                        <li class="etc_text">해쉬브라운</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <!--메뉴 종료-->
+
+        <!--푸터 시작-->
+        <div class="footer">
+            <div class="wishlist">
+                <table>
+                    <td><span class="wish_menu"></span></td>
+                    <td><span class="wish_price"></span></td>
+                    
+                    <td>
+                        <input type="button" value="-" onclick="fn_count('minus', select_menu);">
+                        <input type="text" name="menu_count" value="1" readonly="readonly">
+                        <input type="button" value="+" onclick="fn_count('plus', select_menu);">
+                    </td>
+                </table>
+            </div>
+            
+            <div class="button">
+                <a href="javascript:payWindow();">
+                    <input type="submit" id="pay" value="결제">
+                </a>
+
+                <a href="../Serverway/main.html">
+                    <input type="button" id="return" value="되돌아가기">
+                </a>
+            </div>
+        </div>
+        <!--푸터 종료-->
+
+
+
+
+        <!--수인도경 시작-->
+        <!--12/08 수인 class -> id로 수정-->
+        <div class="choice_main_wrap">
+            <header>
+                <h2>재료 선택</h2>
+
+                <div id="choice0">
+                    <label><input type="radio" class="radio5" name="choice0" value="단품" data-price="0" onclick='getListValue()'>단품</label>
+
+                    <label><input type="radio" class="radio5" name="choice0" value="세트" data-price="1000" onclick='getListValue()' id="set" checked>세트 (+1,000)</label>
+                </div>
+            </header>
+
+            <br><br><br>
+            <!--재료 선택 화면 시작-->
+            <div id="choice_wrap">
+                <div id="choice">
+
+                    <h4>빵</h4>
+                    <section class="breadtype">
+                        <ul>
+                            <li><label><input type="radio" name="bread" value="빵 선택안함" onclick='getListValue()' id="nonebread" checked> 빵 선택안함</label></li>
+                            <li><label><input type="radio" name="bread" value="위트" onclick='getListValue()'> 위트</label></li>
+                            <li><label><input type="radio" name="bread" value="허니오트" onclick='getListValue()'> 허니 오트</label></li>
+
+                        </ul>
+                        <ul>
+                            <li><label><input type="radio" name="bread" value="하티" onclick='getListValue()'> 하티</label></li>
+                            <li><label><input type="radio" name="bread" value="플랫" onclick='getListValue()'> 플랫</label></li>
+                        </ul>
+                    </section>
+
+
+                    <h4>치즈</h4>
+                    <section class="cheesetype">
+                        <ul>
+                            <li><label><input type="radio" name="cheese" value="치즈 선택안함" onclick='getListValue()' id="nonecheese" checked> 치즈 선택안함</label></li>
+                            <li><label><input type="radio" name="cheese" value="아메리칸" onclick='getListValue()'> 아메리칸 치즈</label></li>
+                            <li><label><input type="radio" name="cheese" value="슈레드" onclick='getListValue()'> 슈레드</label></li>
+
+                        </ul>
+                        <ul>
+                            <li><label><input type="radio" name="cheese" value="모차렐라" onclick='getListValue()'> 모차렐라</label></li>
+                        </ul>
+                    </section>
+
+                    <br>
+                    <h4>야채(안드시는 야채를 선택해주세요.)<p># 취소를 원하시면 한번 더 클릭해주세요.
+                        <p>
+                    </h4>
+
+                    <section class="vegtype">
+                        <ul>
+                            <li><label><input type="radio" name="everyveg" value="모든 야채 넣기" onclick='getListValue()' id="allveg" checked> 모든 야채 넣기</label></li>
+                            <li><label><input type="radio" name="nonevege" value="모든야채빼기" onclick='getListValue()'> 모든 야채 빼기</label></li>
+                            <li><label><input type="radio" name="lettuce" value="양상추" onclick='getListValue()'> 양상추</label></li>
+
+                        </ul>
+                        <ul>
+                            <li><label><input type="radio" name="tomato" value="토마토" onclick='getListValue()'> 토마토</label></li>
+                            <li><label><input type="radio" name="cucumber" value="오이" onclick='getListValue()'> 오이</label></li>
+                            <li><label><input type="radio" name="pepper" value="피망" onclick='getListValue()'> 피망</label></li>
+
+                        </ul>
+                        <ul>
+                            <li><label><input type="radio" name="onion" value="양파" onclick='getListValue()'> 양파</label></li>
+                            <li><label><input type="radio" name="pickle" value="피클" onclick='getListValue()'> 피클</label></li>
+                            <li><label><input type="radio" name="olive" value="올리브" onclick='getListValue()'> 올리브</label></li>
+                        </ul>
+                        <ul>
+                            <li><label><input type="radio" name="jalapeno" value="할라피뇨" onclick='getListValue()'> 할라피뇨</label></li>
+                        </ul>
+                    </section>
+
+                    <br>
+                    <h4>소스<p># 취소를 원하시면 한번 더 클릭해주세요.
+                        <p>
+                    </h4>
+                    <section class="saucetype">
+                        <ul>
+                            <li><label><input type="radio" name="sauce0" value="추천소스" onclick='getListValue()' id="sauce" checked>추천 소스</label></li>
+                            <li><label><input type="radio" name="sweetonion" value="스윗어니언 소스" onclick='getListValue()'> 스윗어니언</label></li>
+                            <li><label><input type="radio" name="ranch" value="랜치드레싱" onclick='getListValue()'> 랜치드레싱</label></li>
+
+                        </ul>
+                        <ul>
+                            <li><label><input type="radio" name="sweetchilli" value="스윗칠리 소스" onclick='getListValue()'> 스윗 칠리</label></li>
+                            <li><label><input type="radio" name="hneymus" value="허니머스타드 소스" onclick='getListValue()'> 허니 머스타드</label></li>
+                            <li><label><input type="radio" name="mayo" value="마요네즈" onclick='getListValue()'> 마요네즈</label></li>
+
+                        </ul>
+                        <ul>
+                            <li><label><input type="radio" name="smokbbq" value="스모크바베큐 소스" onclick='getListValue()'> 스모크바베큐</label></li>
+                            <li><label><input type="radio" name="southwest" value="사우스웨스트 소스" onclick='getListValue()'> 사우스웨스트</label></li>
+                            <li><label><input type="radio" name="salt" value="소금" onclick='getListValue()'> 소금</label></li>
+
+                        </ul>
+                        <ul>
+                            <li><label><input type="radio" name="blackpepper" value="후추" onclick='getListValue()'> 후추</label></li>
+                        </ul>
+                    </section>
+
+                    <br>
+                    <h4>추가<p># 취소를 원하시면 한번 더 클릭해주세요.
+                        <p>
+                    </h4>
+                    <section class="addtype">
+                        <ul>
+                            <li><label><input type="radio" class="radio5" name="add0" value="추가선택안함" data-price="0" onclick='getListValue()' id="none" checked>추가 선택 안함</label></li>
+                            <li><label><input type="radio" class="radio5" name="eggmayo" value="에그마요" data-price="2000" onclick='getListValue()'> 에그마요</label></li>
+                            <li><label><input type="radio" class="radio5" name="peppe" value="페페로니" data-price="2000" onclick='getListValue()'> 페페로니</label></li>
+
+                        </ul>
+                        <ul>
+                            <li><label><input type="radio" class="radio5" name="bacon" value="베이컨" data-price="3000" onclick='getListValue()'> 베이컨</label></li>
+                            <li><label><input type="radio" class="radio5" name="avocado" value="아보카도" data-price="1000" onclick='getListValue()'> 아보카도</label></li>
+                            <li><label><input type="radio" class="radio5" name="omelet" value="오믈렛" data-price="2500" onclick='getListValue()'> 오믈렛</label></li>
+                        </ul>
+                    </section>
+
+                    <!--12/08 수인 slick 기능 추가-->
+                    <script type="text/javascript">
+                        $('.breadtype').slick();
+                    </script>
+                    <script type="text/javascript">
+                        $('.cheesetype').slick();
+                    </script>
+                    <script type="text/javascript">
+                        $('.vegtype').slick();
+                    </script>
+                    <script type="text/javascript">
+                        $('.saucetype').slick();
+                    </script>
+                    <script type="text/javascript">
+                        $('.addtype').slick();
+                    </script>
+
+                    <!--가격-->
+                    <!--선택한 샌드위치 이름 들어갈 곳-->
+                    <h4>선택한 샌드위치 : 치킨데리야끼</h4>
+                    <div id="totalprice">Total
+                        <div id="listresult"> </div>
+                        <h4 id="sumprice">0</h4>
+                        <div id="sandwichPrice"></div>
+
+                    </div>
+
+                    <!--버튼-->
+                    <div class="button">
+                        <input onclick="choiceWinClose()" type="button" value="취소" id="btn">
+                        <input onclick="value_check()" type="button" value="담기" id="btn">
+                    </div>
+
+                </div>
+            </div>
+
+            <script>
+                $("#set").prop("checked", true);
+                $("#nonebread").prop("checked", true);
+                $("#nonecheese").prop("checked", true);
+                $("#allveg").prop("checked", true);
+                $("#sauce").prop("checked", true);
+                $("#none").prop("checked", true);
+            </script>
+
+            <!--푸터 종료-->
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!--재료 선택 화면 끝-->
+
+
+
+
+
+
+
+        <div class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                </div>
+            </div>
+        </div>
+        <!--메뉴 종료-->
+    </div>
+
+    <div class="orderlist_main_wrap">
+        <div id="order_body">
+            <br>
+            <img src="img/logo.png">
+            <h1 id="order_h1">주문목록</h1>
+            <br>
+            <!-- 담은 샌드위치 및 옵션 불러와야함 -->
+            <div>
+                <h3 id="sandwich">샌드위치 1</h3>
+                <h4 id="option">허니오트</h4>
+                <h4 id="option">아메리칸치즈</h4>
+                <h4 id="option">허니오트</h4>
+                <h4 id="option">허니오트</h4>
+                <h4 id="option">허니오트</h4>
+                <h4 id="option">허니오트</h4>
+                <h3 id="sandwich">샌드위치 2</h3>
+                <h4 id="option">허니오트</h4>
+                <h4 id="option">허니오트</h4>
+                <h4 id="option">허니오트</h4>
+                <h4 id="option">허니오트</h4>
+                <h4 id="option">허니오트</h4>
+            </div>
+            <br><br><br>
+            <!-- 버튼 클릭 시 메뉴주문화면으로 이동 -->
+            <button type="button" id="btn_order" onClick="location.href='menu_screen.html'">더 담으러가기</button>
+            <br><br><br><br>
+            <hr id="order_hr">
+            <br><br>
+            <div>
+                <h4 id="cost">총 주문 금액</h4>
+                <h3 id="totalcost">
+                    <!-- 총 주문 금액 불러와야함-->
+                    원
+                </h3>
+
+            </div>
+            <div>
+
+                <!-- 메인화면 이동 -->
+                <button id="order_btn" onClick="location.href='main.html'"> 결제 취소</button>
+
+                <!-- 결제 진행 창 이동 -->
+                <a href="javascript:payingWindow()">
+                    <button id="order_btn">카드 결제</button>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="payment_main_wrap">
+
+            <div id="edit_div">
+                <div id="banner_header">
+                    <div id="banner_sub">
+                        <img src="banner.png" name="배너">
+                    </div>
+
+                    <div id="card">
+                        <img src="card.PNG" height="300">
+                        <div class="spinner-grow text-success" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                        <h3>카드를 넣어주세요</h3>
+                    </div>
+
+                    <div>
+                        <div id="btna">
+                        </div>
+                        <!--홈화면으로 이동-->
+
+                        <a href="main.html"><input type="button" name="cancle" value="결제취소"></a>
+                        <!--번호표로 창 띄워야 함-->
+                        <a href="number.html"><input type="button" name="card" value="카드 결제"></a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--버튼-->
+        <div class="button">
+            <input onclick="choiceWinClose()" type="button" value="취소" id="btn">
+            <input onclick="value_check()" type="button" value="담기" id="btn">
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+</body></html>
