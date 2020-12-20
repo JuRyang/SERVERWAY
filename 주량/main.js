@@ -199,6 +199,7 @@ function payWinClose(){
 }
 
 
+
 //카드 팝업창 
 function payingWindow(){
     var payingDiv=document.querySelector('div.payment_main_wrap');
@@ -217,7 +218,6 @@ function numWindow(){
     var numDiv=document.querySelector('div.number_main_wrap');
     numDiv.style.display='block';
 }
-
 
 
 
