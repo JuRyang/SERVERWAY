@@ -198,6 +198,23 @@ function payWinClose(){
     payDiv.style.display='none';
 }
 
+//카드 팝업창 
+function payingWindow(){
+    var payingDiv=document.querySelector('div.payment_main_wrap');
+    payingDiv.style.display='block';
+}
 
+// 카드창 닫기
+function payingWinClose(){
+   var payingDiv=document.querySelector('div.payment_main_wrap');
+    payingDiv.style.display='none';
+     
+}
+
+//번호표 팝업
+function numWindow(){
+    var numDiv=document.querySelector('div.number_main_wrap');
+    numDiv.style.display='block';
+}
 
 
