@@ -309,128 +309,42 @@
                     </div>
                 </div>
 
-    <!--결제 진행 창 -->
                 <div class="payment_main_wrap">
 
-                    <div id="pay_edit_div">
-                        
+                    <div id="edit_div">
+                        <div id="banner_header">
                             <div id="banner_sub">
-                                <img src="img/logo.png">
+                                <img src="banner.png" name="배너">
                             </div>
 
                             <div id="card">
-                                <img src="img/card.PNG" height="300">
-                                </div>
-                                <div id="loading">
-                                    <img src="img/loading.gif">
+                                <img src="card.PNG" height="300">
+                                <div class="spinner-grow text-success" role="status">
+                                    <span class="sr-only">Loading...</span>
                                 </div>
                                 <h3>카드를 넣어주세요</h3>
-                            
+                            </div>
 
-                            <div>     
+                            <div>
+                                <div id="btna">
+                                </div>
+                                
                                 <!--주문목록으로 이동-->
-                                    <button id="btn_pay" onclick="javascript:payingWinClose();">결제취소
-                                    </button>
-                              
+
+                                <input type="button" name="cancle" id="btn_pay" value="결제취소" onclick="payingWinClose()">
 
                                 <!--번호표로 창 띄워야 함-->
-                                <a href="javascript:numWindow();">
-                                    <button id="btn_pay">카드 결제</button>
-                                </a>
+                                <a href="number.html"><input type="button" name="card"  id="btn_pay"value="카드 결제"></a>
+
                             </div>
+
+                        </div>
                     </div>
                 </div>
-            
-            
-            <!--번호표 -->
-            <div class="number_main_wrap">
-            
-              <SCRIPT>
-                  
-        /*3초 후 메인화면*/          
-        /*$(document).ready(function (){
-           setTimeout(function(){
-                location.href='main.html';
-            },1000*500);
-        });*/
-                  
-            //대기번호 
-        waitingNum = new Date
-        waitingNum.setDate(waitingNum.getDate())
-        hitCt = eval(cookieVal("pageHit"))
-        hitCt++
-        document.cookie = "pageHit=" + hitCt + ";waiting=" + waitingNum.toGMTString()
-            
-
-      
 
 
-
-            //결제페이지 들어온 횟수로 카운트 설정
-        waitingNum = new Date
-        waitingNum.setDate(waitingNum.getDate())
-        hitCt = eval(cookieVal("countNum"))
-        hitCt++
-        document.cookie = "countNum=" + hitCt + ";countNum=" + waitingNum.toGMTString()
-
-
-        function cookieVal(cookieName) {
-            thisCookie = document.cookie.split("; ")
-            for (i = 0; i < thisCookie.length; i++) {
-                if (cookieName == thisCookie[i].split("=")[0]) {
-                    return thisCookie[i].split("=")[1]
-                }
-            }
-            return 0
-        }
-
-    </SCRIPT>
-<div id="wait">
-    <form id="numform">
-        <h1 id="Numfont1">대기번호</h1>
-
-
-
-        <!--대기번호 숫자-->
-        <div id="count">
-            <SCRIPT>
-                document.write("<font>" + hitCt + "</font>")
-            </SCRIPT>
-
-
-        </div>
-
-        <div id="date">
-
-
-        </div>
-        <h4 id="Numfont2">대기인수:<SCRIPT>
-                document.write("<font1>" + (hitCt - 1) + "</font1>")
-            </SCRIPT>
-        </h4>
-
-        <div id="date">
-
-            <script type="text/javascript">
-                var now = new Date();
-                var nowYear = now.getFullYear();
-                // getMonth 는 0 부터 인덱스가 시작하기 때문에 + 1 
-                var nowMonth = now.getMonth() + 1;
-                var nowDate = now.getDate();
-                var nowHour = now.getHours();
-                var nowMt = now.getMinutes();
-                document.write(+nowYear + '년 ' + nowMonth + '월 ' + nowDate + '일 ');
-
-                document.write(nowHour + '시 ' + nowMt + '분 ');
-            </script>
-            <h3 id="Numfont3"> 결제가 완료되었습니다.</h3>
-        </div>
-    </form>
-</div>
-
-
-</div>
             </div>
+
 
         </section>
 
