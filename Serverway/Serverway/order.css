@@ -1,0 +1,96 @@
+body {
+    padding: 20px;
+    margin: 20px auto;
+    width: 930px;
+    /*height: 1380px;*/
+    border-radius: 50px;
+
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+
+    box-shadow: 0px 0px 10px #aaa;
+}
+
+h1{
+    font-size: 35pt;
+}
+
+table{
+    font-family: 'Nanum Gothic' , sans-serif;
+    width: 750px;
+    height: 400px;
+}
+
+#sandwich{  
+    font-family: 'Nanum Gothic' , sans-serif;
+    text-align : left;
+    text-indent: 4em;   
+    color: #46a65e;
+    font-size: 30pt;
+}
+
+#option{ 
+    font-family: 'Nanum Gothic' , sans-serif;
+    line-height: 0;
+    text-align : left;
+    text-indent: 8em;
+    font-size: 24pt;
+}
+
+#price{
+    font-family: 'Nanum Gothic' , sans-serif;
+    font-size: 30pt;
+    text-align: center;
+    
+}
+
+hr{
+    border: 0;
+    width: 80%;
+    height: 3px;
+    background: #ccc;
+}
+
+#cost{
+    font-size: 24pt;
+}
+
+#totalprice{
+    color: #46a65e;
+    font-size: 24pt;
+}
+
+#btn {
+    font-size: 25px;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin: 20px 70px auto;
+    width: 250px;
+    height: 85px;
+    border: 0;
+    border-radius: 90px;
+    background: #46a65e;
+    color: white;
+
+}
+
+#btn:hover{
+    cursor: pointer;
+    background-color: #ffca08;
+}
+
+
+#btn_order {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 25px;
+    width: 250px;
+    height: 85px;
+    border: 0;
+    border-radius: 90px;
+    background: #ffca08;
+    color: white;
+}
+
+#btn_order:hover{
+    cursor: pointer;
+    background-color: #46a65e;
+}
